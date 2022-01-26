@@ -289,6 +289,6 @@ Usage: #example
 // need to add, vacd requires practitionerrole: * performer.actor = Reference(PractitionerRole/6-1-PractitionerRole)
 * protocolApplied.targetDisease[0] = http://snomed.info/sct#397430003 "Diphtheria caused by Corynebacterium diphtheriae (disorder)"
 // Immunization.protocolApplied.targetDisease:targetDiseaseGPSCode: max allowed = 1, but found 2 (from http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips)
-// * protocolApplied.targetDisease[+] = http://snomed.info/sct#76902006 "Tetanus (disorder)"
-// * protocolApplied.targetDisease[+] = http://snomed.info/sct#27836007 "Pertussis (disorder)"
+* protocolApplied.targetDisease[+] = http://snomed.info/sct#76902006 "Tetanus (disorder)"
+* protocolApplied.targetDisease[+] = http://snomed.info/sct#27836007 "Pertussis (disorder)"
 * protocolApplied.doseNumberPositiveInt = 1
