@@ -3,8 +3,8 @@
 
 # Package name
 # https://confluence.hl7.org/display/FHIR/NPM+Package+Specification#NPMPackageSpecification-Packagename
-id: ch.fhir.ig.ch-ig
-canonical: http://fhir.ch/ig/ch-ig
+id: ch.fhir.ig.ch-ips
+canonical: http://fhir.ch/ig/ch-ips
 name: CH_IG
 title: "CH IG (R4)"
 description: Implementation Guide CH IG (R4) for ...
@@ -28,12 +28,12 @@ contact:
 
 dependencies:
   ch.fhir.ig.ch-core: 2.0.0
+  hl7.fhir.uv.ips: current
+  ch.fhir.ig.ch-etoc: 0.1.0
 
 pages:
   index.md:
     title: Home
-  profiles.md:
-    title: Profiles
   extensions.md:
     title: Extensions
   terminology.md:
@@ -41,8 +41,3 @@ pages:
 
 # Parameters
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-
-resources:
-  CodeSystem/ch-ig-example-translation:
-    name: CH IG Example Translation
-    exampleBoolean: false

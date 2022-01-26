@@ -5,6 +5,6 @@
 
 ### Source and Download
 
-[GitHub Repository](https://github.com/ahdis/ch-ig)
+[GitHub Repository](https://github.com/ahdis/ch-ips)
 
 **Download**: You can download this implementation guide in the [NPM package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
