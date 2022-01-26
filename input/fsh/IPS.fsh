@@ -6,7 +6,7 @@ Usage: #example
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "175bd032-8b00-4728-b2dc-748bb1501aed"
 * type = #document
-* timestamp = "2017-12-11T14:30:00+01:00"
+* timestamp = "2022-01-11T14:30:00+01:00"
 * entry[0].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"
 * entry[=].resource = Inline-Instance-for-IPS-Composition
 * entry[+].fullUrl = "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
@@ -43,14 +43,14 @@ Usage: #inline
 * title = "Patient Summary for IPS Switerland"
 * confidentiality = #N
 * attester[0].mode = #legal
-* attester[=].time = "2017-12-11T14:30:00+01:00"
+* attester[=].time = "2022-01-11T14:30:00+01:00"
 * attester[=].party = Reference(Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef)
 * attester[+].mode = #legal
-* attester[=].time = "2017-12-11T14:30:00+01:00"
+* attester[=].time = "2022-01-11T14:30:00+01:00"
 * attester[=].party = Reference(Organization/890751f4-2924-4636-bab7-efffc7f3cf15)
 * custodian = Reference(Organization/890751f4-2924-4636-bab7-efffc7f3cf15)
 * event.code = http://terminology.hl7.org/CodeSystem/v3-ActClass#PCPR
-* event.period.end = "2017-12-11T14:30:00+01:00"
+* event.period.end = "2022-01-11T14:30:00+01:00"
 * section[0].title = "Active Problems"
 * section[=].code = http://loinc.org#11450-4 "Problem list Reported"
 * section[=].text.status = #generated
