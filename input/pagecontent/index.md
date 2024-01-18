@@ -1,6 +1,10 @@
 ### Introduction
+An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.  
 
-TODO    
+The intention of this **CH IPS** FHIR implementation guide is to provide a structure that allows the use of the [Swiss core profiles](https://fhir.ch/ig/ch-core/index.html) while ensuring conformity with the [International Patient Summary Implementation Guide](https://hl7.org/fhir/uv/ips/).   
+To be able to guarantee this, the CH IPS profiles are derived from the respective CH Core profiles and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
+
+{% include img.html img="ig-overview.png" caption="Fig.: Schematic representation of the dependency mechanism of the implementation guides" width="70%" %}
 
 
 <div markdown="1" class="stu-note">
