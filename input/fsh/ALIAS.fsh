@@ -1,5 +1,7 @@
 Alias: $imposeProfile =                 http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
 
+Alias: $vitalsigns =                    http://hl7.org/fhir/StructureDefinition/vitalsigns
+
 Alias: $loinc =                         http://loinc.org
 Alias: $sct =                           http://snomed.info/sct
 Alias: $v3-ReligiousAffiliation =       http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation

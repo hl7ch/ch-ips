@@ -29,12 +29,16 @@ contact:
 
 dependencies:
   hl7.terminology: 5.4.0
-  ch.fhir.ig.ch-core: 4.0.1
   hl7.fhir.uv.ips: 1.1.0
+  ch.fhir.ig.ch-core: 4.0.1
+  ch.fhir.ig.ch-emed: 4.0.1
+  ch.fhir.ig.ch-allergyintolerance: 2.0.1
+  ch.fhir.ig.ch-vacd: 4.0.1
   ch.fhir.ig.ch-etoc: 2.0.1
 
 menu:
   Home: index.html
+  Document: document.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
@@ -43,6 +47,8 @@ menu:
 pages:
   index.md:
     title: Home 
+  document.md:
+    title: Document  
   profiles.md:
     title: Profiles
   extensions.md:

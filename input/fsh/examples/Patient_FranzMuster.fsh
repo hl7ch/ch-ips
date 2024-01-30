@@ -19,7 +19,7 @@ Description: "Example for CH IPS Patient, conforms to CH Core and IPS"
 * gender = #male 
 * birthDate = "1995-01-27"
 
-
+/*
 Instance: FranzMusterIncorrect
 InstanceOf: ChIpsPatient
 Usage: #example
@@ -43,3 +43,4 @@ Description: "Incorrect example for CH IPS Patient (unused gender value, missing
 //* gender = #male
 * gender = #unknown 
 * birthDate = "1995-01-27"
+*/

@@ -15,6 +15,9 @@ The specification herewith documented is work in progress.
 
 **Download**: You can download this implementation guide in the [npm package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
 
+### MustSupport
+TODO [MustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) definition
+
 ### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
 
