@@ -163,7 +163,7 @@ Usage: #inline
 * effectivePeriod.start = "2011-11-29"
 
 Instance: med
-InstanceOf: Medication
+InstanceOf: ChIpsMedication
 Usage: #inline
 * code = urn:oid:2.51.1.1#7680538751228 "TRIATEC Tabl 2.5 mg 20 Stk"
 * code.text = "TRIATEC Tabl 2.5 mg"
@@ -200,7 +200,7 @@ Usage: #inline
 * effectivePeriod.start = "2012-02-04"
 
 Instance: med2
-InstanceOf: Medication
+InstanceOf: ChIpsMedication
 Usage: #inline
 * code = urn:oid:2.51.1.1#7680521101306 "BELOC ZOK Ret Tabl 50 mg 30 Stk"
 * code.text = "BELOC ZOK Ret Tabl 50 mg"
