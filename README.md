@@ -10,3 +10,4 @@ The International Patient Summary (IPS) document is an electronic health record 
 - [ ] define MustSupport and set the flag in the profiles (at the moment the flags are overtaken from IPS but only for Composition.section)
 - [ ] add examples and use cases, update the SwissIpsDocument example (meaningful content)
 - [ ] check open issues, check for TODO/FIXME
+- [ ] test the behaviour if two different cardinalities are defined in CH Core and IPS (may add an section in the ig to describe this)
