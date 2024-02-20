@@ -1,1 +1,10 @@
 == Suppressed Messages ==
+
+# External code system
+A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
+
+# Reference to draft artefact
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
+
+# Caused through underlying profile
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

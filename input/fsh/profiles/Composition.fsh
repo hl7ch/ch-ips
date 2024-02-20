@@ -47,7 +47,7 @@ Description: "This CH IPS profile for the resource Composition is derived from t
     medicationStatement 0..* and
     medicationRequest 0..*
 * section[sectionMedications].entry[medicationStatement] only Reference(ChIpsMedicationStatement)
-* section[sectionMedications].entry[medicationRequest] only Reference(MedicationRequestIPS)
+* section[sectionMedications].entry[medicationRequest] only Reference(ChIpsMedicationRequest)
 
 * section[sectionAllergies] obeys ch-ips-comp-1
 * section[sectionAllergies].title 1..

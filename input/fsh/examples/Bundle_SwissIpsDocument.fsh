@@ -154,10 +154,10 @@ Usage: #inline
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8) // Patient
 * reasonCode.text = "Bluthochdruck"
 * note.text = "-"
-* dosage[baseEntry].timing.repeat.boundsPeriod.start = "2011-11-29"
-* dosage[baseEntry].timing.repeat.when = #MORN
-* dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
-* dosage[baseEntry].doseAndRate.doseQuantity = 0.5 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* dosage.timing.repeat.boundsPeriod.start = "2011-11-29"
+* dosage.timing.repeat.when = #MORN
+* dosage.route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage.doseAndRate.doseQuantity = 0.5 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * informationSource = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8) // Patient
 * dateAsserted = "2011-11-29"
 * effectivePeriod.start = "2011-11-29"
@@ -186,15 +186,15 @@ Usage: #inline
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8) // Patient
 * reasonCode.text = "Bluthochdruck"
 * note.text = "-"
-* dosage[baseEntry][+].sequence = 1
-* dosage[baseEntry][=].patientInstruction = "Morgens 1 und abends 1/2 Tablette nehmen"
-* dosage[baseEntry][=].timing.repeat.boundsPeriod.start = "2012-02-04"
-* dosage[baseEntry][=].timing.repeat.when = #MORN
-* dosage[baseEntry][=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
-* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
-* dosage[additionalEntry][+].sequence = 2
-* dosage[additionalEntry][=].timing.repeat.when = #EVE
-* dosage[additionalEntry][=].doseAndRate.doseQuantity = 0.5 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* dosage[+].sequence = 1
+* dosage[=].patientInstruction = "Morgens 1 und abends 1/2 Tablette nehmen"
+* dosage[=].timing.repeat.boundsPeriod.start = "2012-02-04"
+* dosage[=].timing.repeat.when = #MORN
+* dosage[=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* dosage[+].sequence = 2
+* dosage[=].timing.repeat.when = #EVE
+* dosage[=].doseAndRate.doseQuantity = 0.5 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * informationSource = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8) // Patient
 * dateAsserted = "2012-02-04"
 * effectivePeriod.start = "2012-02-04"

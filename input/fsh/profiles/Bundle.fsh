@@ -52,9 +52,9 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * entry[Media].resource 1..
 * entry[Media].resource only MediaObservationUvIps
 * entry[Medication].resource 1..
-* entry[Medication].resource only MedicationIPS
+* entry[Medication].resource only ChIpsMedication
 * entry[MedicationRequest].resource 1..
-* entry[MedicationRequest].resource only MedicationRequestIPS
+* entry[MedicationRequest].resource only ChIpsMedicationRequest
 * entry[MedicationStatement].resource 1..
 * entry[MedicationStatement].resource only ChIpsMedicationStatement
 * entry[Procedure].resource 1..
