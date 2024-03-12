@@ -37,6 +37,8 @@ dependencies:
 menu:
   Home: index.html
   Document: document.html
+  Use Case:
+    German: usecase-german.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
@@ -47,6 +49,8 @@ pages:
     title: Home 
   document.md:
     title: Document  
+  usecase-german.md:
+    title: Anwendungsfälle
   profiles.md:
     title: Profiles
   extensions.md:
