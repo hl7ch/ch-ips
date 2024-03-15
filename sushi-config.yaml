@@ -31,7 +31,6 @@ dependencies:
   hl7.terminology: 5.4.0
   hl7.fhir.uv.ips: 1.1.0
   ch.fhir.ig.ch-core: current
-  ch.fhir.ig.ch-vacd: 4.0.1
   ch.fhir.ig.ch-etoc: 2.0.1
 
 menu:
