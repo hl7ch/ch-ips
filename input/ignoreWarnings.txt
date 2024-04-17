@@ -2,6 +2,7 @@
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
 
 # Reference to draft artefact
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
