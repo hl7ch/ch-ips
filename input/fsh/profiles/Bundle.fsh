@@ -9,7 +9,7 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * entry[Composition].resource only ChIpsComposition
 * entry[Patient].resource only ChIpsPatient
 * entry[Practitioner].resource only ChIpsPractitioner
-//* entry[PractitionerRole]
+* entry[PractitionerRole].resource only ChIpsPractitionerRole
 * entry[Organization].resource only ChIpsOrganization
 //* entry[RelatedPerson]
 //* entry[Device]

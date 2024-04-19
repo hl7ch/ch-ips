@@ -1,10 +1,10 @@
 ### Introduction
 An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.  
 
-The intention of this **CH IPS** FHIR implementation guide is to provide a structure that allows the use of the [Swiss core profiles](https://fhir.ch/ig/ch-core/index.html) while ensuring conformity with the [International Patient Summary Implementation Guide](https://hl7.org/fhir/uv/ips/).   
+The intention of this **CH IPS** FHIR implementation guide (IG) is to provide a structure that allows the use of the [Swiss core profiles](https://fhir.ch/ig/ch-core/index.html) while ensuring conformity with the profiles of the [International Patient Summary Implementation Guide](https://hl7.org/fhir/uv/ips/STU1.1/).   
 To be able to guarantee this, the CH IPS profiles are derived from the respective CH Core profiles and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
 
-{% include img.html img="ig-overview.png" caption="Fig.: Schematic representation of the dependency mechanism of the implementation guides" width="70%" %}
+{% include img.html img="ig-overview.png" caption="Fig. 1: Schematic representation of the dependency mechanism of the implementation guides" width="65%" %}
 
 
 <div markdown="1" class="stu-note">
@@ -15,14 +15,23 @@ The specification herewith documented is work in progress.
 
 **Download**: You can download this implementation guide in the [npm package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
 
-### MustSupport
-TODO [MustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) definition
+### Principles & Design
+CH IPS follows the [Design Conventions and Principles](https://hl7.org/fhir/uv/ips/STU1.1/design.html) of the IPS IG. Please check the detailed information there.    
+Only a few key points are mentioned and illustrated in simplified form below.
+
+The IPS is composed of different elements and sections, see the description [here](https://hl7.org/fhir/uv/ips/STU1.1/ipsStructure.html). The [CH IPS Document](document.html) is based on this **structure**.
+
+The principles for **representing “known absent” and “not known”** described [here](https://hl7.org/fhir/uv/ips/STU1.1/design.html#representing-known-absent-and-not-known) apply for CH IPS and are illustrated in Fig. 2.
+
+In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/STU1.1/design.html#must-support) also take effect.
+
+{% include img.html img="sections.png" caption="Fig. 2: Summary illustration of some principles for the sections" width="60%" %}
 
 ### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
 
 Although the present specification does gives users the opportunity to observe data protection and data security regulations, its use does not guarantee compliance with these regulations. Effective compliance must be ensured by appropriate measures during implementation projects and in daily operations. The corresponding implementation measures are explained in the standard. 
-In addition, the present specification can only influence compliance with the security regulations in the technical area of standardisation. It cannot influence organisational and contractual matters.
+In addition, the present specification can only influence compliance with the security regulations in the technical area of standardization. It cannot influence organizational and contractual matters.
 
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).

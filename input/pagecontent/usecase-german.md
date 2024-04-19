@@ -1,2 +1,4 @@
 ### Fallbeispiel 1
-Frau Monika Wegmüller, geboren am 15. Mai 1943, kommt mit einem stechenden Schmerz in der Brust und Atemnot in die Notaufnahme. Dort wird sie von einem Team aus ärztlichem Fachpersonal und Pflegepersonal untersucht. Der behandelnde Arzt ruft das IPS von Frau Wegmüller auf und stellt fest, dass Frau Wegmüller an Diabetes leidet und Blutdruckmedikamente einnimmt. Zusätzlich leidet Frau Wegmüller an einer Allergie gegen Penicillin. Sofort wird Frau Wegmüller eine niedrige Dosis Betablocker verabreicht, und ihr Herzrhythmus wird überwacht.
+Frau [Monika Wegmüller](Patient-MonikaWegmueller.html), geboren am 15. Mai 1943, kommt mit einem stechenden Schmerz in der Brust und Atemnot in die Notaufnahme. Dort wird sie von einem Team aus ärztlichem Fachpersonal und Pflegepersonal untersucht. Der behandelnde Arzt ruft das IPS von Frau Wegmüller auf und stellt fest, dass Frau Wegmüller an Diabetes leidet und Blutdruckmedikamente einnimmt. Zusätzlich leidet Frau Wegmüller an einer Allergie gegen Penicillin. Sofort wird Frau Wegmüller eine niedrige Dosis Betablocker verabreicht, und ihr Herzrhythmus wird überwacht.
+
+[Dokument](Bundle_DocUC1.html)
