@@ -7,14 +7,11 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * ^extension[$imposeProfile].valueCanonical = Canonical(BundleUvIps)
 
 * entry[Composition].resource only ChIpsComposition
+* entry[Patient] 1..1
 * entry[Patient].resource only ChIpsPatient
 * entry[Practitioner].resource only ChIpsPractitioner
 * entry[PractitionerRole].resource only ChIpsPractitionerRole
 * entry[Organization].resource only ChIpsOrganization
-//* entry[RelatedPerson]
-//* entry[Device]
-//* entry[Encounter]
-//* entry[Location]
 
 * entry contains
     AllergyIntolerance 0..* and

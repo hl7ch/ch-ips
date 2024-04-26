@@ -16,16 +16,15 @@ The specification herewith documented is work in progress.
 **Download**: You can download this implementation guide in the [npm package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
 
 ### Principles & Design
-CH IPS follows the [Design Conventions and Principles](https://hl7.org/fhir/uv/ips/STU1.1/design.html) of the IPS IG. Please check the detailed information there.    
-Only a few key points are mentioned and illustrated in simplified form below.
-
-The IPS is composed of different elements and sections, see the description [here](https://hl7.org/fhir/uv/ips/STU1.1/ipsStructure.html). The [CH IPS Document](document.html) is based on this **structure**.
-
-The principles for **representing “known absent” and “not known”** described [here](https://hl7.org/fhir/uv/ips/STU1.1/design.html#representing-known-absent-and-not-known) apply for CH IPS and are illustrated in Fig. 2.
-
-In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/STU1.1/design.html#must-support) also take effect.
+CH IPS follows the [Design Conventions and Principles](https://hl7.org/fhir/uv/ips/STU1.1/design.html) of the International Patient Summary IG. Please check the detailed information there.    
+In the CH IPS IG, only a few key points are highlighted and visualized in a simplified form:
+* The IPS is composed of different elements and sections, see the description in the [IPS IG](https://hl7.org/fhir/uv/ips/STU1.1/ipsStructure.html). The [CH IPS Document](document.html) is based on this **structure**.
+* The principles for **representing “known absent” and “not known”** described in the [IPS IG](https://hl7.org/fhir/uv/ips/STU1.1/design.html#representing-known-absent-and-not-known) apply for CH IPS and are illustrated in Fig. 2.
+* In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/STU1.1/design.html#must-support) also take effect.
 
 {% include img.html img="sections.png" caption="Fig. 2: Summary illustration of some principles for the sections" width="60%" %}
+
+Profiling in CH IPS is kept to a minimum and focuses on Swiss use. In order to avoid duplication, which could lead to conflicts in future versions, not all restrictions (e.g. must support, cardinalities, constraints) of the IPS are repeated in the CH IPS profiles. The imposeProfile extension ensures the validation of conformity with both profiles.
 
 ### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
