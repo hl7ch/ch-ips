@@ -1,4 +1,5 @@
 Alias: $imposeProfile =                     http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
+Alias: $absent-unknown-uv-ips =             http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 
 Alias: $vitalsigns =                        http://hl7.org/fhir/StructureDefinition/vitalsigns
 

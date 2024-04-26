@@ -1,16 +1,17 @@
-Instance: DocUC1
+Instance: UC1-SwissIpsDocument1
 InstanceOf: ChIpsDocument
 Usage: #example
-Title: "Document Use Case 1"
-Description: "Example for CH IPS Document, conforms to CH Core and IPS"
+Title: "UC 1: Swiss IPS Document 1"
+Description: "Example for CH IPS Document, conforms to CH Core and IPS (only required sections, including representation of 'known absent')"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:22f9773e-1a6b-4561-8642-849f15b43b02"
 * type = #document
 * timestamp = "2024-01-11T10:00:00+01:00"
 
-* entry[Composition][0].fullUrl = "http://test.fhir.ch/r4/Composition/CompUC1"
-* entry[Composition][=].resource = CompUC1
+// Header
+* entry[Composition][0].fullUrl = "http://test.fhir.ch/r4/Composition/UC1-Composition1"
+* entry[Composition][=].resource = UC1-Composition1
 * entry[Patient][+].fullUrl = "http://test.fhir.ch/r4/Patient/MonikaWegmueller" 
 * entry[Patient][=].resource = MonikaWegmueller
 * entry[Practitioner][+].fullUrl = "http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"
@@ -19,11 +20,15 @@ Description: "Example for CH IPS Document, conforms to CH Core and IPS"
 * entry[PractitionerRole][=].resource = FamilienHausarztAtHausarzt
 * entry[Organization][+].fullUrl = "http://test.fhir.ch/r4/Organization/Hausarzt"
 * entry[Organization][=].resource = Hausarzt
-* entry[MedicationStatement][+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/BelocZok" 
-* entry[MedicationStatement][=].resource = BelocZok
-* entry[MedicationStatement][+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/Metformin"
-* entry[MedicationStatement][=].resource = Metformin
-* entry[AllergyIntolerance][+].fullUrl = "http://test.fhir.ch/r4/AllergyIntolerance/AllergyPenicillin" 
-* entry[AllergyIntolerance][=].resource = AllergyPenicillin
+
+// Required
+* entry[MedicationStatement][+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatMetformin" 
+* entry[MedicationStatement][=].resource = MedStatMetformin
+* entry[AllergyIntolerance][+].fullUrl = "http://test.fhir.ch/r4/AllergyIntolerance/NoKnownAllergy" 
+* entry[AllergyIntolerance][=].resource = NoKnownAllergy
 * entry[Condition][+].fullUrl = "http://test.fhir.ch/r4/Condition/DiabetesMellitus"
 * entry[Condition][=].resource = DiabetesMellitus
+
+// Recommended
+
+// Optional

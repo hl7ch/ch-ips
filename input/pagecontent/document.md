@@ -4,7 +4,8 @@ This exchange format is defined as a [document](https://hl7.org/fhir/R4/document
 {% include img.html img="document.png" caption="Fig. 3: Schematic document structure of CH IPS" width="80%" %}
 
 
-### Profiles and Examples
-* [CH IPS Document](StructureDefinition-ch-ips-document.html): Definition for the Swiss IPS Document in the context of the electronic patient record (EPR), derived from the CH Core Document EPR with support for conformity with the IPS Document.
-* **Example Bundles:** 
-   * Swiss IPS Document ([JSON](Bundle-SwissIpsDocument.json.html), [XML](Bundle-SwissIpsDocument.xml.html))
+### Profile
+[CH IPS Document](StructureDefinition-ch-ips-document.html): Definition for the Swiss IPS Document in the context of the electronic patient record (EPR), derived from the CH Core Document EPR with support for conformity with the IPS Document.
+
+### Examples
+* [UC 1: Swiss IPS Document 1](Bundle-UC1-SwissIpsDocument1.html): Document includes only required sections and shows also how to represent 'known absent' for a required section

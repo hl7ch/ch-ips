@@ -7,12 +7,11 @@ Description: "Example for CH IPS MedicationStatement, conforms to CH Core and IP
 * status = #active
 * medicationReference = Reference(BelocZok)
 * subject = Reference(MonikaWegmueller)
-* dateAsserted = "2012-02-04T14:00:00+01:00"
-* informationSource = Reference(FamilienHausarztAtHausarzt)
+* effectivePeriod.start = "2023-02-01"
 * reasonCode.text = "Bluthochdruck"
 * dosage[0].sequence = 1
-* dosage[=].patientInstruction = "-"
-* dosage[=].timing.repeat.boundsPeriod.start = "2012-02-04"
+* dosage[=].patientInstruction = "Mit einem Glas Wasser einnehmen"
+* dosage[=].timing.repeat.boundsPeriod.start = "2023-02-01"
 * dosage[=].timing.repeat.when = #MORN
 * dosage[=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
 * dosage[=].route.text = "zum Einnehmen"

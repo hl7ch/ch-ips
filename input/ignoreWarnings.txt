@@ -1,8 +1,14 @@
 == Suppressed Messages ==
 
+# Incompatibility between CH EMED and IPS for the medication units: https://github.com/hl7ch/ch-ips/issues/2
+Value is 'http://snomed.info/sct' but must be 'http://unitsofmeasure.org'
+
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
+
+# Code for IPS document not in Swiss value set: https://github.com/hl7ch/ch-epr-term/issues/43
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#60591-5)
 
 # Reference to draft artefact
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0

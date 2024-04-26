@@ -7,24 +7,37 @@ Description: "Example for CH IPS MedicationStatement, conforms to CH Core and IP
 * status = #active
 * medicationReference = Reference(Metformin)
 * subject = Reference(MonikaWegmueller)
-* dateAsserted = "2012-02-04T14:00:00+01:00"
+* effectivePeriod.start = "2020-03-03"
 * informationSource = Reference(FamilienHausarztAtHausarzt)
 * reasonCode.text = "Diabetes mellitus type 2"
+* reasonReference = Reference(DiabetesMellitus)
 * dosage[0].sequence = 1
-* dosage[=].patientInstruction = "-"
-* dosage[=].timing.repeat.boundsPeriod.start = "2012-02-04"
-* dosage[=].timing.repeat.when = #MORN
+* dosage[=].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
+* dosage[=].timing.repeat.boundsPeriod.start = "2020-03-03"
+* dosage[=].timing.repeat.when[0] = #MORN
+* dosage[=].timing.repeat.when[+] = #EVE
 * dosage[=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
 * dosage[=].route.text = "zum Einnehmen"
-* dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
-* dosage[+].sequence = 2
-* dosage[=].timing.repeat.when = #EVE
 * dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 
 Instance: Metformin
 InstanceOf: ChIpsMedication
 Usage: #inline
+* code = urn:oid:2.51.1.1#7680521101306 "METFORMIN Axapharm Filmtabl 500 mg 50 Stk"
+* code.text = "METFORMIN Axapharm Filmtabl 500 mg"
+* form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
+* form.text = "Tablette"
+* amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
+
+
+// https://github.com/hl7ch/ch-ips/issues/2
+Instance: MetforminIssue2
+InstanceOf: ChIpsMedication
+Usage: #example
+Title: "Metformin (Issue 2)"
+Description: "Example for CH IPS Medication, conforms to CH Core, but NOT to IPS (see issue #2)"
 * code = urn:oid:2.51.1.1#7680521101306 "METFORMIN Axapharm Filmtabl 500 mg 50 Stk"
 * code.text = "METFORMIN Axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
