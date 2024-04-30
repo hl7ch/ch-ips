@@ -20,12 +20,15 @@ Usage: #inline
 * attester[legalAuthenticator].party.type = "Practitioner"
 * custodian = Reference(urn:uuid:a27376ce-fa12-458d-a2dc-f90e63de126b) "Spital"
 * custodian.type = "Organization"
+* relatesTo.code = #replaces
+* relatesTo.targetIdentifier.system = "urn:ietf:rfc:3986"
+* relatesTo.targetIdentifier.value = "urn:uuid:22f9773e-1a6b-4561-8642-849f15b43b02"
 * event.code = $v3-ActClass#PCPR "care provision"
 * event.period.start = "2024-01-11T10:00:00+01:00"
 * event.period.end = "2024-05-03T09:30:00+02:00"
 
 // Required
-* section[sectionMedications].title = "Medication"
+* section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin zur Behandlung des Diabetes mellitus und Beloc Zok zur Behandlung des Bluthochdrucks</div>"
@@ -36,15 +39,14 @@ Usage: #inline
 * section[sectionMedications].entry[medicationRequest][+] = Reference(urn:uuid:a90a2282-a79a-4f14-8f10-ce8619472595) "Beloc Zok"
 * section[sectionMedications].entry[medicationRequest][=].type = "MedicationRequest"
 
-
-* section[sectionAllergies].title = "Allergies and Intolerances"
+* section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien und Intoleranzen</div>"
-* section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(urn:uuid:27da84cc-526a-4098-afb5-f08c7836d893) "No Known Allergy"
+* section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(urn:uuid:27da84cc-526a-4098-afb5-f08c7836d893) "Keine bekannten Allergien"
 * section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
-* section[sectionProblems].title = "Active Problems"
+* section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2 und Bluthochdruck</div>"
@@ -52,3 +54,20 @@ Usage: #inline
 * section[sectionProblems].entry[problem][=].type = "Condition"
 * section[sectionProblems].entry[problem][+] = Reference(urn:uuid:8a79d459-0d2f-460b-87fd-a7de12d49871) "Bluthochdruck"
 * section[sectionProblems].entry[problem][=].type = "Condition"
+
+// Recommended
+* section[sectionProceduresHx].title = "Durchgeführte Behandlungen"
+* section[sectionProceduresHx].code = $loinc#47519-4 "History of Procedures Document"
+* section[sectionProceduresHx].text.status = #generated
+* section[sectionProceduresHx].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blinddarmentfernung 27.09.2000</div>"
+* section[sectionProceduresHx].entry[procedure][0] = Reference(urn:uuid:b5434748-47e9-4dab-a47c-6d0e5dff1fe9) "Appendektomie"
+* section[sectionProceduresHx].entry[procedure][=].type = "Procedure"
+
+* section[sectionImmunizations].title = "Impfungen"
+* section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[sectionImmunizations].text.status = #generated
+* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blinddarmentfernung 27.09.2000</div>"
+* section[sectionImmunizations].entry[immunization][0] = Reference(urn:uuid:19efd704-3461-4120-b3cf-a76ae046e150) "DiTePe"
+* section[sectionImmunizations].entry[immunization][=].type = "Immunization"
+
+// Optional

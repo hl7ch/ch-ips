@@ -19,3 +19,6 @@ Alias: $ech-11-maritalstatus =              http://fhir.ch/ig/ch-core/CodeSystem
 Alias: $ech-46-phonecategory =              http://fhir.ch/ig/ch-core/CodeSystem/ech-46-phonecategory
 Alias: $ech-46-emailcategory =              http://fhir.ch/ig/ch-core/CodeSystem/ech-46-emailcategory
 Alias: $ech-46-internetcategory =           http://fhir.ch/ig/ch-core/CodeSystem/ech-46-internetcategory
+
+Alias: $edqm-standardterms =                urn:oid:0.4.0.127.0.16.1.1.2.1
+Alias: $ch-vacd-swissmedic-cs =             http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs

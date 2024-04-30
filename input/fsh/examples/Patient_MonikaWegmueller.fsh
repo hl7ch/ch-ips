@@ -22,8 +22,8 @@ Usage: #example
 Title: "UC 1.2: Monika Wegmüller"
 Description: "Example for CH IPS Patient, conforms to CH Core and IPS"
 * identifier.type = $v2-0203#MR
-* identifier.system = "urn:oid:2.999.1"
-* identifier.value = "11111111"
+* identifier.system = "http://example.com/fhir/pid"
+* identifier.value = "987654321"
 * name.family = "Wegmüller"
 * name.given = "Monika"
 * gender = #female

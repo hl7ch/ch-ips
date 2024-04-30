@@ -36,5 +36,10 @@ Description: "Example for CH IPS Document, conforms to CH Core and IPS (with req
 * entry[Condition][=].resource = 8a79d459-0d2f-460b-87fd-a7de12d49871
 
 // Recommended
+* entry[Procedure][+].fullUrl = "urn:uuid:b5434748-47e9-4dab-a47c-6d0e5dff1fe9" 
+* entry[Procedure][=].resource = b5434748-47e9-4dab-a47c-6d0e5dff1fe9
+* entry[Immunization][+].fullUrl = "urn:uuid:19efd704-3461-4120-b3cf-a76ae046e150"
+* entry[Immunization][=].resource = 19efd704-3461-4120-b3cf-a76ae046e150
 
 // Optional
+
