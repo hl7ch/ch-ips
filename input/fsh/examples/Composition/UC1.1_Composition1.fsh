@@ -1,7 +1,7 @@
 Instance: UC1-Composition1
 InstanceOf: ChIpsComposition
 Usage: #example
-Title: "UC 1: Composition 1"
+Title: "UC 1.1: Composition"
 Description: "Example for CH IPS Composition, conforms to CH Core and IPS"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
@@ -19,24 +19,24 @@ Description: "Example for CH IPS Composition, conforms to CH Core and IPS"
 * attester[legalAuthenticator].mode = #legal
 * attester[legalAuthenticator].party = Reference(FamilienHausarzt) // Practitioner
 * custodian = Reference(Hausarzt) // Organization
-* event.code = http://terminology.hl7.org/CodeSystem/v3-ActClass#PCPR
+* event.code = $v3-ActClass#PCPR "care provision"
 * event.period.end = "2024-01-11T10:00:00+01:00"
 
 // Required
-* section[sectionMedications][0].title = "Medication"
-* section[sectionMedications][=].code = $loinc#10160-0 "History of Medication use Narrative"
-* section[sectionMedications][=].text.status = #generated
-* section[sectionMedications][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin zur Behandlung des Diabetes mellitus</div>"
-* section[sectionMedications][=].entry = Reference(MedStatMetformin) // MedicationStatement
+* section[sectionMedications].title = "Medication"
+* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin zur Behandlung des Diabetes mellitus</div>"
+* section[sectionMedications].entry = Reference(MedStatMetformin) // MedicationStatement
 
-* section[sectionAllergies][+].title = "Allergies and Intolerances"
-* section[sectionAllergies][=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[sectionAllergies][=].text.status = #generated
-* section[sectionAllergies][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien und Intoleranzen</div>"
-* section[sectionAllergies][=].entry = Reference(NoKnownAllergy) // AllergyIntolerance
+* section[sectionAllergies].title = "Allergies and Intolerances"
+* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien und Intoleranzen</div>"
+* section[sectionAllergies].entry = Reference(NoKnownAllergy) // AllergyIntolerance
 
-* section[sectionProblems][+].title = "Active Problems"
-* section[sectionProblems][=].code = $loinc#11450-4 "Problem list - Reported"
-* section[sectionProblems][=].text.status = #generated
-* section[sectionProblems][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2</div>"
-* section[sectionProblems][=].entry = Reference(DiabetesMellitus) // Condition
+* section[sectionProblems].title = "Active Problems"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2</div>"
+* section[sectionProblems].entry = Reference(DiabetesMellitus) // Condition

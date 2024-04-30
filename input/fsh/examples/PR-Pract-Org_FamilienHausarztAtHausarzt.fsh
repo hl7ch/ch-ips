@@ -1,6 +1,6 @@
 Instance: FamilienHausarztAtHausarzt
 InstanceOf: ChIpsPractitionerRole
-Title: "Familien Hausarzt @ Hausarzt"
+Title: "UC 1.1: Familien Hausarzt @ Hausarzt"
 Description: "Example for CH IPS PractitionerRole, conforms to CH Core and IPS"
 Usage: #example
 * practitioner = Reference(FamilienHausarzt)
@@ -8,7 +8,7 @@ Usage: #example
 
 Instance: FamilienHausarzt
 InstanceOf: ChIpsPractitioner
-Title: "Familien Hausarzt"
+Title: "UC 1.1.: Familien Hausarzt"
 Description: "Example for CH IPS Practitioner, conforms to CH Core and IPS"
 Usage: #example
 * identifier[GLN].system = "urn:oid:2.51.1.3"
@@ -18,7 +18,7 @@ Usage: #example
 
 Instance: Hausarzt
 InstanceOf: ChIpsOrganization
-Title: "Hausarzt"
+Title: "UC 1.1: Hausarzt"
 Description: "Example for CH IPS Organization, conforms to CH Core and IPS"
 Usage: #example
 * identifier[GLN].system = "urn:oid:2.51.1.3"

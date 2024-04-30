@@ -13,6 +13,7 @@ Alias: $reaction-event-certainty =          http://terminology.hl7.org/CodeSyste
 Alias: $condition-clinical =                http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status =              http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-category =                http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $v3-ActClass =                       http://terminology.hl7.org/CodeSystem/v3-ActClass
 
 Alias: $ech-11-maritalstatus =              http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus
 Alias: $ech-46-phonecategory =              http://fhir.ch/ig/ch-core/CodeSystem/ech-46-phonecategory

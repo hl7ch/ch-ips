@@ -1,7 +1,7 @@
 Instance: NoKnownAllergy
 InstanceOf: ChIpsAllergyIntolerance
 Usage: #example
-Title: "No Known Allergy"
+Title: "UC 1.1: No Known Allergy"
 Description: "Example for CH IPS AllergyIntolerance, conforms to CH Core and IPS"
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
