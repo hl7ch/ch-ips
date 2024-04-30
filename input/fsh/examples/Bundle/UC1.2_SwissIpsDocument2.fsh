@@ -24,10 +24,16 @@ Description: "Example for CH IPS Document, conforms to CH Core and IPS (with req
 // Required
 * entry[MedicationStatement][+].fullUrl = "urn:uuid:88ee1ffb-26d0-49a2-95e4-6212261805a6" 
 * entry[MedicationStatement][=].resource = 88ee1ffb-26d0-49a2-95e4-6212261805a6
+* entry[MedicationStatement][+].fullUrl = "urn:uuid:c691357a-d4f9-4906-af3a-3d63d4a1d312" 
+* entry[MedicationStatement][=].resource = c691357a-d4f9-4906-af3a-3d63d4a1d312
+* entry[MedicationRequest][+].fullUrl = "urn:uuid:a90a2282-a79a-4f14-8f10-ce8619472595" 
+* entry[MedicationRequest][=].resource = a90a2282-a79a-4f14-8f10-ce8619472595
 * entry[AllergyIntolerance][+].fullUrl = "urn:uuid:27da84cc-526a-4098-afb5-f08c7836d893" 
 * entry[AllergyIntolerance][=].resource = 27da84cc-526a-4098-afb5-f08c7836d893
 * entry[Condition][+].fullUrl = "urn:uuid:506b9fef-be0a-4398-bb7e-7d14c311912f"
 * entry[Condition][=].resource = 506b9fef-be0a-4398-bb7e-7d14c311912f
+* entry[Condition][+].fullUrl = "urn:uuid:8a79d459-0d2f-460b-87fd-a7de12d49871"
+* entry[Condition][=].resource = 8a79d459-0d2f-460b-87fd-a7de12d49871
 
 // Recommended
 
