@@ -11,8 +11,10 @@ A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found,
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#60591-5)
 
 # Reference to draft artefact
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
 
 # Caused through underlying profile
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+# Display values in different languages
+No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ActClass#PCPR in the language de-CH
