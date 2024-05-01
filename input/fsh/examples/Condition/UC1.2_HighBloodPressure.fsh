@@ -2,7 +2,7 @@ Instance: 8a79d459-0d2f-460b-87fd-a7de12d49871
 InstanceOf: ChIpsCondition
 Usage: #example
 Title: "UC 1.2: High Blood Pressure"
-Description: "Example for CH IPS Condition, conforms to CH Core and IPS"
+Description: "Example for CH IPS Condition"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed 
 * category = $condition-category#problem-list-item

@@ -2,7 +2,7 @@ Instance: 88ee1ffb-26d0-49a2-95e4-6212261805a6
 InstanceOf: ChIpsMedicationStatement
 Usage: #example
 Title: "UC 1.2: Metformin"
-Description: "Example for CH IPS MedicationStatement, conforms to CH Core and IPS"
+Description: "Example for CH IPS MedicationStatement"
 * contained = Metformin
 * status = #active
 * medicationReference = Reference(Metformin)

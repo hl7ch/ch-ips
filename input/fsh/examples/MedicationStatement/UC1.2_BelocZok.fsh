@@ -2,7 +2,7 @@ Instance: c691357a-d4f9-4906-af3a-3d63d4a1d312
 InstanceOf: ChIpsMedicationStatement
 Usage: #example
 Title: "UC 1.2: Beloc Zok"
-Description: "Example for CH IPS MedicationStatement, conforms to CH Core and IPS"
+Description: "Example for CH IPS MedicationStatement"
 * contained = BelocZok
 * basedOn = Reference(urn:uuid:a90a2282-a79a-4f14-8f10-ce8619472595) "Beloc Zok"
 * basedOn.type = "MedicationRequest"

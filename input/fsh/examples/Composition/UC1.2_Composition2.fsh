@@ -42,7 +42,7 @@ Usage: #inline
 * section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
-* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien und Intoleranzen</div>"
+* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien</div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(urn:uuid:27da84cc-526a-4098-afb5-f08c7836d893) "Keine bekannten Allergien"
 * section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
@@ -66,8 +66,23 @@ Usage: #inline
 * section[sectionImmunizations].title = "Impfungen"
 * section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
 * section[sectionImmunizations].text.status = #generated
-* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blinddarmentfernung 27.09.2000</div>"
+* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Boostrix 15.09.2017</div>"
 * section[sectionImmunizations].entry[immunization][0] = Reference(urn:uuid:19efd704-3461-4120-b3cf-a76ae046e150) "DiTePe"
 * section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 // Optional
+* section[sectionVitalSigns].title = "Vitalzeichen"
+* section[sectionVitalSigns].code = $loinc#8716-3 "Vital signs"
+* section[sectionVitalSigns].text.status = #generated
+* section[sectionVitalSigns].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Körpergewicht: 65 kg, Körpergrösse: 170 cm</div>"
+* section[sectionVitalSigns].entry[vitalSign][0] = Reference(urn:uuid:db5ef7b0-e946-4260-a604-128b8887a41b) "65 kg"
+* section[sectionVitalSigns].entry[vitalSign][=].type = "Observation"
+* section[sectionVitalSigns].entry[vitalSign][+] = Reference(urn:uuid:07b2e450-a62e-4734-98bf-51462f008e0f) "170 cm"
+* section[sectionVitalSigns].entry[vitalSign][=].type = "Observation"
+
+* section[sectionSocialHistory].title = "Sozialanamnese"
+* section[sectionSocialHistory].code = $loinc#29762-2 "Social history Narrative"
+* section[sectionSocialHistory].text.status = #generated
+* section[sectionSocialHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ehemalige Raucherin</div>"
+* section[sectionSocialHistory].entry[smokingTobaccoUse][0] = Reference(urn:uuid:93fe0d81-a547-494e-941c-113506108b76) "Ehemalige Raucherin"
+* section[sectionSocialHistory].entry[smokingTobaccoUse][=].type = "Observation"

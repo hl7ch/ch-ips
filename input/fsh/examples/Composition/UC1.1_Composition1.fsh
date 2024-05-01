@@ -2,7 +2,7 @@ Instance: UC1-Composition1
 InstanceOf: ChIpsComposition
 Usage: #example
 Title: "UC 1.1: Composition"
-Description: "Example for CH IPS Composition, conforms to CH Core and IPS"
+Description: "Example for CH IPS Composition"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:22f9773e-1a6b-4561-8642-849f15b43b02"

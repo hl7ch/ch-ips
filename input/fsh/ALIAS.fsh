@@ -5,6 +5,7 @@ Alias: $vitalsigns =                        http://hl7.org/fhir/StructureDefinit
 
 Alias: $loinc =                             http://loinc.org
 Alias: $sct =                               http://snomed.info/sct
+Alias: $ucum =                              http://unitsofmeasure.org
 Alias: $v3-ReligiousAffiliation =           http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
 Alias: $v2-0203 =                           http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $allergyintolerance-clinical =       http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
@@ -14,6 +15,7 @@ Alias: $condition-clinical =                http://terminology.hl7.org/CodeSyste
 Alias: $condition-ver-status =              http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-category =                http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $v3-ActClass =                       http://terminology.hl7.org/CodeSystem/v3-ActClass
+Alias: $observation-category =              http://terminology.hl7.org/CodeSystem/observation-category
 
 Alias: $ech-11-maritalstatus =              http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus
 Alias: $ech-46-phonecategory =              http://fhir.ch/ig/ch-core/CodeSystem/ech-46-phonecategory

@@ -2,7 +2,7 @@ Instance: MedStatMetformin
 InstanceOf: ChIpsMedicationStatement
 Usage: #example
 Title: "UC 1.1: Metformin"
-Description: "Example for CH IPS MedicationStatement, conforms to CH Core and IPS"
+Description: "Example for CH IPS MedicationStatement"
 * contained = Metformin
 * status = #active
 * medicationReference = Reference(Metformin)
@@ -36,7 +36,7 @@ Instance: MetforminIssue2
 InstanceOf: ChIpsMedication
 Usage: #example
 Title: "Issue 2: Metformin"
-Description: "Example for CH IPS Medication, conforms to CH Core, but NOT to IPS (see issue #2)"
+Description: "Example for CH IPS Medication - conforms to CH Core, but NOT to IPS (see issue #2)"
 * code = urn:oid:2.51.1.1#7680521101306 "METFORMIN Axapharm Filmtabl 500 mg 50 Stk"
 * code.text = "METFORMIN Axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"

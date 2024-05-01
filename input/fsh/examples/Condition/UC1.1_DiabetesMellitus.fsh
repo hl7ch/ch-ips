@@ -2,7 +2,7 @@ Instance: DiabetesMellitus
 InstanceOf: ChIpsCondition
 Usage: #example
 Title: "UC 1.1: Diabetes Mellitus"
-Description: "Example for CH IPS Condition, conforms to CH Core and IPS"
+Description: "Example for CH IPS Condition"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed 
 * category = $condition-category#problem-list-item

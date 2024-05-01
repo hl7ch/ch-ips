@@ -2,7 +2,7 @@ Instance: a90a2282-a79a-4f14-8f10-ce8619472595
 InstanceOf: ChIpsMedicationRequest
 Usage: #example
 Title: "UC 1.2: Beloc Zok"
-Description: "Example for CH IPS MedicationRequest, conforms to CH Core and IPS"
+Description: "Example for CH IPS MedicationRequest"
 * contained = BelocZok
 * status = #active
 * intent = #plan

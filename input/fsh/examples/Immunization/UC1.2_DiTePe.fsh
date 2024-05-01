@@ -2,7 +2,7 @@ Instance: 19efd704-3461-4120-b3cf-a76ae046e150
 InstanceOf: ChIpsImmunization
 Usage: #example
 Title: "UC 1.2: DiTePe"
-Description: "Example for CH IPS Immunization, conforms to CH Core and IPS"
+Description: "Example for CH IPS Immunization"
 * status = #completed
 * vaccineCode.coding[swissVaccines][0] = $ch-vacd-swissmedic-cs#637 "Boostrix"
 * vaccineCode.coding[snomedctVaccines][+] = $sct#871875004 "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"

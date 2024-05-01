@@ -25,13 +25,14 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
     MedicationRequest 0..* and
     MedicationStatement 0..* and
     Procedure 0..* and
+    ObservationVitalSigns 0..* and
     ObservationPregnancyEdd 0..* and
     ObservationPregnancyOutcome 0..* and
     ObservationPregnancyStatus 0..* and
     ObservationAlcoholUse 0..* and
     ObservationTobaccoUse 0..* and
     ObservationResults 0..* and
-    Specimen 0..*
+    Specimen 0..*     
 * entry[AllergyIntolerance].resource 1..
 * entry[AllergyIntolerance].resource only ChIpsAllergyIntolerance
 * entry[Condition].resource 1..
@@ -56,6 +57,8 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * entry[MedicationStatement].resource only ChIpsMedicationStatement
 * entry[Procedure].resource 1..
 * entry[Procedure].resource only ProcedureUvIps
+* entry[ObservationVitalSigns].resource 1..
+* entry[ObservationVitalSigns].resource only http://hl7.org/fhir/StructureDefinition/vitalsigns
 * entry[ObservationPregnancyEdd].resource 1..
 * entry[ObservationPregnancyEdd].resource only ObservationPregnancyEddUvIps
 * entry[ObservationPregnancyOutcome].resource 1..

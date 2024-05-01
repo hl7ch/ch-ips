@@ -2,7 +2,7 @@ Instance: MonikaWegmueller
 InstanceOf: ChIpsPatient
 Usage: #example
 Title: "UC 1.1: Monika Wegmüller"
-Description: "Example for CH IPS Patient, conforms to CH Core and IPS"
+Description: "Example for CH IPS Patient"
 * identifier.type = $v2-0203#MR
 * identifier.system = "urn:oid:2.999.1"
 * identifier.value = "11111111"
@@ -20,7 +20,7 @@ Instance: 8383926c-ece1-4384-94bc-b4250b4cb71b
 InstanceOf: ChIpsPatient
 Usage: #example
 Title: "UC 1.2: Monika Wegmüller"
-Description: "Example for CH IPS Patient, conforms to CH Core and IPS"
+Description: "Example for CH IPS Patient"
 * identifier.type = $v2-0203#MR
 * identifier.system = "http://example.com/fhir/pid"
 * identifier.value = "987654321"
