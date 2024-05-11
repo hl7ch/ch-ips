@@ -36,7 +36,9 @@ menu:
   Home: index.html
   Document: document.html
   Use Case:
+    English: usecase-english.html
     German: usecase-german.html
+    French: usecase-french.html
   Profiles: profiles.html
 #  Extensions: extensions.html
 #  Terminology: terminology.html
@@ -47,8 +49,12 @@ pages:
     title: Home 
   document.md:
     title: Document  
+  usecase-english.md:
+    title: Use Cases
   usecase-german.md:
     title: Anwendungsfälle
+  usecase-french.md:
+    title: Cas d’application  
   profiles.md:
     title: Profiles
 #  extensions.md:

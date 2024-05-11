@@ -1,0 +1,8 @@
+The following use cases serve to illustrate possible scenarios for the use of the International Patient Summary document. The cases are designed to illustrate the representation of the document. The clinical content has not yet been validated.
+
+### Use case 1
+
+Mrs. [Monika Wegmüller](Patient-MonikaWegmueller.html), born on 15 May 1943, comes to the emergency room on 26 April 2024 with a sharp pain in her chest and shortness of breath. She is cared for by a team of medical and nursing staff. The doctor in charge at the hospital, Dr. Martina Meier, requests Mrs. Wegmüller's most recent [IPS document (11 January 2024)](Bundle-UC1-SwissIpsDocument1.html), which the [family doctor](PractitionerRole-FamilienHausarztAtHausarzt.html) created on 11 January 2024. Dr. Meier sees documented in it that Mrs. Wegmüller suffers from [diabetes](Condition-DiabetesMellitus.html) and is taking [metformin](MedicationStatement-MedStatMetformin.html) for this reason. Mrs. Wegmüller has [no known allergies](AllergyIntolerance-NoKnownAllergy.html).     
+With this information, treatment for the shortness of breath and the stabbing chest pain can be started immediately. Mrs. Wegmüller is given a low dose of beta blockers and her heart rhythm is monitored.
+
+After Mrs. Wegmüller quickly feels better thanks to the treatment in the emergency room, the doctor in charge decides to transfer Mrs. Wegmüller to the station for further examination of the cause. There she continues to be cared for by [Dr. Meier](PractitionerRole-869a4dd9-3a4a-4838-ad1e-42453d341147.html) and at the end of her hospital stay a new [IPS document (May 3 2024)](Bundle-UC1-SwissIpsDocument2.html) is created for Mrs. Wegmüller with the latest and additional information.
