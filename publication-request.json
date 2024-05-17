@@ -1,0 +1,16 @@
+{
+    "package-id" : "ch.fhir.ig.ch-ips",
+    "version" : "1.0.0-ballot",
+    "path" : "http://fhir.ch/ig/ch-ips/1.0.0-ballot",
+    "mode" : "milestone",
+    "status" : "ballot",
+    "sequence" : "STU 1",
+    "desc" : "HL7 Switzerland STU 1 Ballot",
+    "descmd" : "HL7 Switzerland STU 1 Ballot",
+    "changes" : "changelog.html",
+    "first" : true,
+    "title" : "CH IPS (R4)",
+    "ci-build" : "https://build.fhir.org/ig/hl7ch/ch-ips/index.html",
+    "category" : "National Base",
+    "introduction" : "The FHIR implementation guide CH IPS is derived from the Swiss Core IG (CH Core) and ensures conformity with the International Patient Summary (IPS)."
+  }

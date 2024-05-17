@@ -8,7 +8,7 @@ A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code c
 A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
 
 # Code for IPS document not in Swiss value set: https://github.com/hl7ch/ch-epr-term/issues/43
-None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#60591-5)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#60591-5)
 
 # Reference to draft artefact
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
@@ -20,6 +20,9 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ActClass#PCPR in the language de-CH
 
 # Known slicing issue in HL7 IPS-UV spec: https://github.com/hl7ch/ch-ips/issues/4
-Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|0.1.0, Element matches more than one slice - ObservationVitalSigns, ObservationResults
-Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|0.1.0, Element matches more than one slice - ObservationTobaccoUse, ObservationResults
+Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ballot, Element matches more than one slice - ObservationVitalSigns, ObservationResults
+Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ballot, Element matches more than one slice - ObservationTobaccoUse, ObservationResults
 Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips|1.1.0, Element matches more than one slice - observation-tobacco-use, observation-results
+
+# https://github.com/HL7/fhir-ig-publisher/issues/898
+The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
