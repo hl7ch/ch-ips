@@ -3,7 +3,7 @@ InstanceOf: ChIpsPatient
 Usage: #example
 Title: "UC 1.1: Monika Wegmüller"
 Description: "Example for CH IPS Patient"
-* identifier.type = $v2-0203#MR
+* identifier.type = $v2-0203#MR "Medical record number"
 * identifier.system = "urn:oid:2.999.1"
 * identifier.value = "11111111"
 * name.family = "Wegmüller"
@@ -21,7 +21,7 @@ InstanceOf: ChIpsPatient
 Usage: #example
 Title: "UC 1.2: Monika Wegmüller"
 Description: "Example for CH IPS Patient"
-* identifier.type = $v2-0203#MR
+* identifier.type = $v2-0203#MR "Medical record number"
 * identifier.system = "http://example.com/fhir/pid"
 * identifier.value = "987654321"
 * name.family = "Wegmüller"
