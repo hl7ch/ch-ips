@@ -1,5 +1,16 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
+### STU 1 Ballot
+
+#### Added
+
+#### Changed / Updated
+
+#### Fixed
+
+#### Issues resolved without amendment
+
+
 ### STU 1 Ballot - v1.0.0 (2024-05-17)
 Initial published version.
 

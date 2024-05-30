@@ -30,7 +30,7 @@ contact:
 dependencies:
   hl7.terminology: 5.5.0
   hl7.fhir.uv.ips: 1.1.0
-  ch.fhir.ig.ch-core: 5.0.0-ballot
+  ch.fhir.ig.ch-core: current
 
 menu:
   Home: index.html

@@ -20,8 +20,8 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ActClass#PCPR in the language de-CH
 
 # Known slicing issue in HL7 IPS-UV spec: https://github.com/hl7ch/ch-ips/issues/4
-Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ballot, Element matches more than one slice - ObservationVitalSigns, ObservationResults
-Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ballot, Element matches more than one slice - ObservationTobaccoUse, ObservationResults
+Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ci-build, Element matches more than one slice - ObservationVitalSigns, ObservationResults
+Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ci-build, Element matches more than one slice - ObservationTobaccoUse, ObservationResults
 Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips|1.1.0, Element matches more than one slice - observation-tobacco-use, observation-results
 
 # https://github.com/HL7/fhir-ig-publisher/issues/898
