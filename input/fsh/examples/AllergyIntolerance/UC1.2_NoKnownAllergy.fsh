@@ -3,8 +3,8 @@ InstanceOf: ChIpsAllergyIntolerance
 Usage: #example
 Title: "UC 1.2: No Known Allergy"
 Description: "Example for CH IPS AllergyIntolerance"
-* clinicalStatus = $allergyintolerance-clinical#active
-* verificationStatus = $allergyintolerance-verification#confirmed
+* clinicalStatus = $allergyintolerance-clinical#active "Active"
+* verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
 * code = $absent-unknown-uv-ips#no-known-allergies "No known allergies"
 * patient = Reference(urn:uuid:8383926c-ece1-4384-94bc-b4250b4cb71b) "Monika Wegmüller"
 * patient.type = "Patient"
