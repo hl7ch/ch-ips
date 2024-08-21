@@ -40,7 +40,7 @@ menu:
     German: usecase-german.html
     French: usecase-french.html
   Guidance: 
-    Narrative Text: narrative-text.html
+    Narrative Content: narrative-content.html
   Profiles: profiles.html
 #  Extensions: extensions.html
 #  Terminology: terminology.html
@@ -57,8 +57,8 @@ pages:
     title: Anwendungsfälle
   usecase-french.md:
     title: Cas d’application
-  narrative-text.md:
-    title: Narrative Text
+  narrative-content.md:
+    title: Narrative Content
   profiles.md:
     title: Profiles
 #  extensions.md:
