@@ -26,8 +26,10 @@ Description: "Example for CH IPS Document (only required sections, including rep
 * entry[MedicationStatement].resource = MedStatMetformin
 * entry[AllergyIntolerance].fullUrl = "http://test.fhir.ch/r4/AllergyIntolerance/NoKnownAllergy" 
 * entry[AllergyIntolerance].resource = NoKnownAllergy
-* entry[Condition].fullUrl = "http://test.fhir.ch/r4/Condition/DiabetesMellitus"
-* entry[Condition].resource = DiabetesMellitus
+* entry[Condition][0].fullUrl = "http://test.fhir.ch/r4/Condition/DiabetesMellitus"
+* entry[Condition][=].resource = DiabetesMellitus
+* entry[Condition][+].fullUrl = "http://test.fhir.ch/r4/Condition/HighBloodPressure"
+* entry[Condition][=].resource = HighBloodPressure
 
 // Recommended
 
