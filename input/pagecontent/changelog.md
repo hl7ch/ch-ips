@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 1 Ballot
 
 #### Added
+* [#6](https://github.com/hl7ch/ch-ips/issues/6): Add guidance for narrative content
 
 #### Changed / Updated
 * [#7](https://github.com/hl7ch/ch-ips/issues/7): Missing display values added
