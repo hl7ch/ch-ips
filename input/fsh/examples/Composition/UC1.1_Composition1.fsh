@@ -38,5 +38,6 @@ Description: "Example for CH IPS Composition"
 * section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2</div>"
-* section[sectionProblems].entry = Reference(DiabetesMellitus) // Condition
+* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2 und Bluthochdruck</div>"
+* section[sectionProblems].entry[problem][0] = Reference(DiabetesMellitus) // Condition
+* section[sectionProblems].entry[problem][+] = Reference(HighBloodPressure) // Condition
