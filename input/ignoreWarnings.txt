@@ -17,8 +17,7 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-ca
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
 # Display values in different languages
-No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ActClass#PCPR in the language de-CH
-Der Displayname%
+%is the default display; the code system%
 
 # Known slicing issue in HL7 IPS-UV spec: https://github.com/hl7ch/ch-ips/issues/4
 Profile http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document|1.0.0-ci-build, Element matches more than one slice - ObservationVitalSigns, ObservationResults
