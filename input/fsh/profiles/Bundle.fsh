@@ -6,6 +6,11 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * . ^short = "CH IPS Document"
 * ^extension[$imposeProfile].valueCanonical = Canonical(BundleUvIps)
 
+// TODO: add discriminator
+// https://chat.fhir.org/#narrow/stream/215610-shorthand/topic/Reslicing.3A.20add.20discriminator
+// * entry ^slicing.discriminator[1].type = #type
+// * entry ^slicing.discriminator[1].path = "resource"
+
 * entry[Composition].resource only ChIpsComposition
 * entry[Patient] 1..1
 * entry[Patient].resource only ChIpsPatient
@@ -20,19 +25,24 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
     DiagnosticReport 0..* and
     ImagingStudy 0..* and
     Immunization 0..* and
-    Media 0..* and
     Medication 0..* and
     MedicationRequest 0..* and
     MedicationStatement 0..* and
     Procedure 0..* and
-    ObservationVitalSigns 0..* and
     ObservationPregnancyEdd 0..* and
     ObservationPregnancyOutcome 0..* and
     ObservationPregnancyStatus 0..* and
     ObservationAlcoholUse 0..* and
     ObservationTobaccoUse 0..* and
-    ObservationResults 0..* and
-    Specimen 0..*     
+    ObservationResultsLaboratoryPathology 0..* and
+    observationResultsRadiology 0..* and
+    ObservationVitalSigns 0..* and
+    Specimen 0..* and
+    Flag 0..* and
+    ClinicalImpression 0..* and
+    CarePlan 0..* and
+    Consent 0..* and
+    DocumentReference 0..*  
 * entry[AllergyIntolerance].resource 1..
 * entry[AllergyIntolerance].resource only ChIpsAllergyIntolerance
 * entry[Condition].resource 1..
@@ -47,8 +57,6 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * entry[ImagingStudy].resource only ImagingStudyUvIps
 * entry[Immunization].resource 1..
 * entry[Immunization].resource only ChIpsImmunization
-* entry[Media].resource 1..
-* entry[Media].resource only MediaObservationUvIps
 * entry[Medication].resource 1..
 * entry[Medication].resource only ChIpsMedication
 * entry[MedicationRequest].resource 1..
@@ -57,8 +65,6 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * entry[MedicationStatement].resource only ChIpsMedicationStatement
 * entry[Procedure].resource 1..
 * entry[Procedure].resource only ProcedureUvIps
-* entry[ObservationVitalSigns].resource 1..
-* entry[ObservationVitalSigns].resource only http://hl7.org/fhir/StructureDefinition/vitalsigns
 * entry[ObservationPregnancyEdd].resource 1..
 * entry[ObservationPregnancyEdd].resource only ObservationPregnancyEddUvIps
 * entry[ObservationPregnancyOutcome].resource 1..
@@ -69,7 +75,21 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * entry[ObservationAlcoholUse].resource only ObservationAlcoholUseUvIps
 * entry[ObservationTobaccoUse].resource 1..
 * entry[ObservationTobaccoUse].resource only ObservationTobaccoUseUvIps
-* entry[ObservationResults].resource 1..
-* entry[ObservationResults].resource only ObservationResultsUvIps
+* entry[ObservationResultsLaboratoryPathology].resource 1..
+* entry[ObservationResultsLaboratoryPathology].resource only ObservationResultsLaboratoryPathologyUvIps
+* entry[observationResultsRadiology].resource 1..
+* entry[observationResultsRadiology].resource only ObservationResultsRadiologyUvIps
+* entry[ObservationVitalSigns].resource 1..
+* entry[ObservationVitalSigns].resource only http://hl7.org/fhir/StructureDefinition/vitalsigns
 * entry[Specimen].resource 1..
 * entry[Specimen].resource only SpecimenUvIps
+* entry[Flag].resource 1..
+* entry[Flag].resource only FlagAlertUvIps
+* entry[ClinicalImpression].resource 1..
+* entry[ClinicalImpression].resource only ClinicalImpression
+* entry[CarePlan].resource 1..
+* entry[CarePlan].resource only CarePlan
+* entry[Consent].resource 1..
+* entry[Consent].resource only Consent
+* entry[DocumentReference].resource 1..
+* entry[DocumentReference].resource only DocumentReference
