@@ -18,6 +18,3 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 
 # Display values in different languages
 %is the default display; the code system%
-
-# https://github.com/HL7/fhir-ig-publisher/issues/898
-The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
