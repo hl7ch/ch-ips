@@ -32,8 +32,8 @@ Description: "Example for CH IPS Composition"
 * section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
-* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien und Intoleranzen</div>"
-* section[sectionAllergies].entry = Reference(NoKnownAllergy) // AllergyIntolerance
+* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergien und Intoleranzen nicht erfragt</div>"
+* section[sectionAllergies].emptyReason = $list-empty-reason#notasked "Not Asked"
 
 * section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
