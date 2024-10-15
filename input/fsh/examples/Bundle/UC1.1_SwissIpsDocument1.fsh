@@ -2,7 +2,7 @@ Instance: UC1-SwissIpsDocument1
 InstanceOf: ChIpsDocument
 Usage: #example
 Title: "UC 1.1: Swiss IPS Document"
-Description: "Example for CH IPS Document (only required sections, including representation of 'known absent') - using absolut URLs for fullUrls/references"
+Description: "Example for CH IPS Document (only required sections, including representation of an 'empty section') - using absolut URLs for fullUrls/references"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:22f9773e-1a6b-4561-8642-849f15b43b02"
@@ -24,8 +24,6 @@ Description: "Example for CH IPS Document (only required sections, including rep
 // Required
 * entry[MedicationStatement].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatMetformin" 
 * entry[MedicationStatement].resource = MedStatMetformin
-* entry[AllergyIntolerance].fullUrl = "http://test.fhir.ch/r4/AllergyIntolerance/NoKnownAllergy" 
-* entry[AllergyIntolerance].resource = NoKnownAllergy
 * entry[Condition].fullUrl = "http://test.fhir.ch/r4/Condition/DiabetesMellitus"
 * entry[Condition].resource = DiabetesMellitus
 

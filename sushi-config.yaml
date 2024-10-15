@@ -29,7 +29,7 @@ contact:
 
 dependencies:
   hl7.terminology: 5.5.0
-  hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.uv.ips: 2.0.0-ballot
   ch.fhir.ig.ch-core: current
 
 menu:
