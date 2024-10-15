@@ -6,10 +6,8 @@ Description: "This CH IPS profile for the resource Bundle is derived from the co
 * . ^short = "CH IPS Document"
 * ^extension[$imposeProfile].valueCanonical = Canonical(BundleUvIps)
 
-// TODO: add discriminator
-// https://chat.fhir.org/#narrow/stream/215610-shorthand/topic/Reslicing.3A.20add.20discriminator
-// * entry ^slicing.discriminator[1].type = #type
-// * entry ^slicing.discriminator[1].path = "resource"
+* entry ^slicing.discriminator[1].type = #type
+* entry ^slicing.discriminator[1].path = "resource"
 
 * entry[Composition].resource only ChIpsComposition
 * entry[Patient] 1..1
