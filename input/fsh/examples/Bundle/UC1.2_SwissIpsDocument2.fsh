@@ -2,7 +2,7 @@ Instance: UC1-SwissIpsDocument2
 InstanceOf: ChIpsDocument
 Usage: #example
 Title: "UC 1.2: Swiss IPS Document"
-Description: "Example for CH IPS Document (with required, recommended and optional sections) - using UUIDs for fullUrls/references"
+Description: "Example for CH IPS Document (with required, some recommended and some optional sections) - using UUIDs for fullUrls/references"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:fe724e67-ac59-4933-b997-2770cc506f3b"
