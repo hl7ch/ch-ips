@@ -9,7 +9,7 @@ Description: "Example for CH IPS MedicationStatement"
 * subject = Reference(urn:uuid:8383926c-ece1-4384-94bc-b4250b4cb71b) "Monika Wegmüller"
 * subject.type = "Patient"
 * effectivePeriod.start = "2020-03-03"
-* reasonCode.text = "Diabetes mellitus type 2"
+* reasonCode.text = "Diabetes mellitus Typ 2"
 * reasonReference = Reference(urn:uuid:506b9fef-be0a-4398-bb7e-7d14c311912f) "Diabetes Mellitus"
 * reasonReference.type = "Condition"
 * dosage[0].sequence = 1
