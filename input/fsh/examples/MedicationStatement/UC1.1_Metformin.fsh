@@ -8,8 +8,7 @@ Description: "Example for CH IPS MedicationStatement - Dosage 1-0-1-0"
 * medicationReference = Reference(Metformin)
 * subject = Reference(MonikaWegmueller)
 * effectivePeriod.start = "2020-03-03"
-* reasonCode.text = "Diabetes mellitus Typ 2"
-* reasonReference = Reference(DiabetesMellitus)
+* reasonCode.text = "Diabetes"
 * dosage[0].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
 * dosage[=].timing.repeat.boundsPeriod.start = "2020-03-03"
 * dosage[=].timing.repeat.when[0] = #MORN

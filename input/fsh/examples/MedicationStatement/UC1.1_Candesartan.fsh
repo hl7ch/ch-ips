@@ -8,8 +8,7 @@ Description: "Example for CH IPS MedicationStatement - Dosage 1-0-0-0"
 * medicationReference = Reference(Candesartan)
 * subject = Reference(MonikaWegmueller)
 * effectivePeriod.start = "2020-03-03"
-* reasonCode.text = "Bluthochdruck"
-* reasonReference = Reference(HighBloodPressure)
+* reasonCode.text = "Hypertonie"
 * dosage[0].patientInstruction = "Nehmen Sie die Kapseln täglich immer zur gleichen Tageszeit mit oder ohne Mahlzeit mit etwas Wasser ein."
 * dosage[=].timing.repeat.boundsPeriod.start = "2020-03-03"
 * dosage[=].timing.repeat.when[0] = #MORN

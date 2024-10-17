@@ -29,8 +29,8 @@ Description: "Example for CH IPS Composition"
 * section[sectionMedications].text.div = 
 "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   <ul>
-    <li>Metformin zur Behandlung von Diabetes mellitus Typ 2</li>
-    <li>Candesartan zur Behandlung von Bluthochdruck</li>
+    <li>Metformin</li>
+    <li>Candesartan</li>
   </ul>
 </div>"
 * section[sectionMedications].entry[medicationStatement][0] = Reference(MedStatMetformin) // MedicationStatement
@@ -64,7 +64,7 @@ Description: "Example for CH IPS Composition"
 * section[sectionProceduresHx].text.div = 
 "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   <ul>
-    <li>Stent aufgrund koronarer Herzkrankheit</li>
+    <li>Stent (27.09.2022) aufgrund koronarer Herzkrankheit</li>
   </ul>
 </div>"
 * section[sectionProceduresHx].entry[procedure][0] = Reference(StentPlacement) // Procedure
