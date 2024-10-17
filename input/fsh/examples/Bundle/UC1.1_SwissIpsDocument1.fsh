@@ -2,7 +2,7 @@ Instance: UC1-SwissIpsDocument1
 InstanceOf: ChIpsDocument
 Usage: #example
 Title: "UC 1.1: Swiss IPS Document"
-Description: "Example for CH IPS Document (only required sections, including representation of an 'empty section') - using absolut URLs for fullUrls/references"
+Description: "Example for CH IPS Document (required sections (incl. 'empty section') and recommended section) - using absolut URLs for fullUrls/references"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:22f9773e-1a6b-4561-8642-849f15b43b02"
@@ -22,11 +22,19 @@ Description: "Example for CH IPS Document (only required sections, including rep
 * entry[Organization].resource = Hausarzt
 
 // Required
-* entry[MedicationStatement].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatMetformin" 
-* entry[MedicationStatement].resource = MedStatMetformin
-* entry[Condition].fullUrl = "http://test.fhir.ch/r4/Condition/DiabetesMellitus"
-* entry[Condition].resource = DiabetesMellitus
+* entry[MedicationStatement][0].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatMetformin" 
+* entry[MedicationStatement][=].resource = MedStatMetformin
+* entry[MedicationStatement][+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatCandesartan" 
+* entry[MedicationStatement][=].resource = MedStatCandesartan
+* entry[Condition][0].fullUrl = "http://test.fhir.ch/r4/Condition/DiabetesMellitus"
+* entry[Condition][=].resource = DiabetesMellitus
+* entry[Condition][+].fullUrl = "http://test.fhir.ch/r4/Condition/HighBloodPressure"
+* entry[Condition][=].resource = HighBloodPressure
+* entry[Condition][+].fullUrl = "http://test.fhir.ch/r4/Condition/CoronaryHeartDisease"
+* entry[Condition][=].resource = CoronaryHeartDisease
 
 // Recommended
+* entry[Procedure][0].fullUrl = "http://test.fhir.ch/r4/Procedure/StentPlacement"
+* entry[Procedure][=].resource = StentPlacement
 
 // Optional

@@ -31,58 +31,109 @@ Usage: #inline
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin zur Behandlung des Diabetes mellitus und Beloc Zok zur Behandlung des Bluthochdrucks</div>"
+* section[sectionMedications].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Metformin</li>
+    <li>Atorvastatin</li>
+    <li>Clopidogrel</li>
+    <li>Aspirin</li>
+  </ul>
+</div>"
 * section[sectionMedications].entry[medicationStatement][0] = Reference(urn:uuid:88ee1ffb-26d0-49a2-95e4-6212261805a6) "Metformin"
 * section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
-* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:c691357a-d4f9-4906-af3a-3d63d4a1d312) "Beloc Zok"
+* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:6f369210-adb1-4f11-893d-9977e34932de) "Atorvastatin"
 * section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
-* section[sectionMedications].entry[medicationRequest][+] = Reference(urn:uuid:a90a2282-a79a-4f14-8f10-ce8619472595) "Beloc Zok"
-* section[sectionMedications].entry[medicationRequest][=].type = "MedicationRequest"
+* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:e463547f-7414-47cb-b97f-04a81e1ab7d8) "Clopidogrel"
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:f27b9345-6ba6-4fd6-83ab-6db6c2acd981) "Aspirin"
+* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
 
 * section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
-* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keine bekannten Allergien</div>"
+* section[sectionAllergies].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Keine bekannten Allergien</li>
+  </ul>
+</div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(urn:uuid:27da84cc-526a-4098-afb5-f08c7836d893) "Keine bekannten Allergien"
 * section[sectionAllergies].entry[allergyOrIntolerance][=].type = "AllergyIntolerance"
 
 * section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2 und Bluthochdruck</div>"
-* section[sectionProblems].entry[problem][0] = Reference(urn:uuid:506b9fef-be0a-4398-bb7e-7d14c311912f) "Diabetes Mellitus"
+* section[sectionProblems].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Diabetes mellitus Typ 2</li>
+    <li>Bluthochdruck</li>
+    <li>Koronare Herzkrankheit</li>
+    <li>Herzinfarkt (26.04.2024)</li>
+  </ul>  
+</div>"
+* section[sectionProblems].entry[problem][0] = Reference(urn:uuid:506b9fef-be0a-4398-bb7e-7d14c311912f) "Diabetes Mellitus Typ 2"
 * section[sectionProblems].entry[problem][=].type = "Condition"
 * section[sectionProblems].entry[problem][+] = Reference(urn:uuid:8a79d459-0d2f-460b-87fd-a7de12d49871) "Bluthochdruck"
 * section[sectionProblems].entry[problem][=].type = "Condition"
+* section[sectionProblems].entry[problem][+] = Reference(urn:uuid:2c67cf62-d712-44c7-aedb-b5582bc707f1) "Koronare Herzkrankheit"
+* section[sectionProblems].entry[problem][=].type = "Condition"
+* section[sectionProblems].entry[problem][+] = Reference(urn:uuid:12d8debe-5e03-465d-83f3-17675be9db4a) "Herzinfarkt (26.04.2024)"
+* section[sectionProblems].entry[problem][=].type = "Condition"
 
 // Recommended
-* section[sectionProceduresHx].title = "Durchgeführte Behandlungen"
+* section[sectionProceduresHx].title = "Behandlungsverlauf"
 * section[sectionProceduresHx].code = $loinc#47519-4 "History of Procedures Document"
 * section[sectionProceduresHx].text.status = #generated
-* section[sectionProceduresHx].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blinddarmentfernung 27.09.2000</div>"
-* section[sectionProceduresHx].entry[procedure][0] = Reference(urn:uuid:b5434748-47e9-4dab-a47c-6d0e5dff1fe9) "Appendektomie"
+* section[sectionProceduresHx].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Stent (27.09.2022) aufgrund koronarer Herzkrankheit</li>
+    <li>Stent (26.04.2024) aufgrund Herzinfarkt</li>
+  </ul>
+</div>"
+* section[sectionProceduresHx].entry[procedure][0] = Reference(urn:uuid:ad3ec07d-1814-4faf-86fd-1a8ebeecb5fe) "Stent (27.09.2022)"
+* section[sectionProceduresHx].entry[procedure][=].type = "Procedure"
+* section[sectionProceduresHx].entry[procedure][+] = Reference(urn:uuid:d646c888-7af0-4439-8aae-9fd490054583) "Stent (26.04.2024)"
 * section[sectionProceduresHx].entry[procedure][=].type = "Procedure"
 
 * section[sectionImmunizations].title = "Impfungen"
 * section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
 * section[sectionImmunizations].text.status = #generated
-* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Boostrix 15.09.2017</div>"
-* section[sectionImmunizations].entry[immunization][0] = Reference(urn:uuid:19efd704-3461-4120-b3cf-a76ae046e150) "DiTePe"
+* section[sectionImmunizations].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>DiTePe-Impfung (15.09.2017)</li>
+  </ul>  
+</div>"
+* section[sectionImmunizations].entry[immunization][0] = Reference(urn:uuid:19efd704-3461-4120-b3cf-a76ae046e150) "DiTePe-Impfung (15.09.2017)"
 * section[sectionImmunizations].entry[immunization][=].type = "Immunization"
 
 // Optional
 * section[sectionVitalSigns].title = "Vitalzeichen"
 * section[sectionVitalSigns].code = $loinc#8716-3 "Vital signs"
 * section[sectionVitalSigns].text.status = #generated
-* section[sectionVitalSigns].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Körpergewicht: 65 kg, Körpergrösse: 170 cm</div>"
-* section[sectionVitalSigns].entry[vitalSign][0] = Reference(urn:uuid:db5ef7b0-e946-4260-a604-128b8887a41b) "65 kg"
+* section[sectionVitalSigns].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Körpergewicht: 65 kg</li>
+    <li>Körpergrösse: 170 cm</li>
+  </ul>  
+</div>"
+* section[sectionVitalSigns].entry[vitalSign][0] = Reference(urn:uuid:db5ef7b0-e946-4260-a604-128b8887a41b) "Körpergewicht: 65 kg"
 * section[sectionVitalSigns].entry[vitalSign][=].type = "Observation"
-* section[sectionVitalSigns].entry[vitalSign][+] = Reference(urn:uuid:07b2e450-a62e-4734-98bf-51462f008e0f) "170 cm"
+* section[sectionVitalSigns].entry[vitalSign][+] = Reference(urn:uuid:07b2e450-a62e-4734-98bf-51462f008e0f) "Körpergrösse: 170 cm"
 * section[sectionVitalSigns].entry[vitalSign][=].type = "Observation"
 
 * section[sectionSocialHistory].title = "Sozialanamnese"
 * section[sectionSocialHistory].code = $loinc#29762-2 "Social history Narrative"
 * section[sectionSocialHistory].text.status = #generated
-* section[sectionSocialHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ehemalige Raucherin</div>"
+* section[sectionSocialHistory].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Ehemalige Raucherin</li>
+  </ul>
+</div>"
 * section[sectionSocialHistory].entry[smokingTobaccoUse][0] = Reference(urn:uuid:93fe0d81-a547-494e-941c-113506108b76) "Ehemalige Raucherin"
 * section[sectionSocialHistory].entry[smokingTobaccoUse][=].type = "Observation"

@@ -26,8 +26,15 @@ Description: "Example for CH IPS Composition"
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin zur Behandlung des Diabetes mellitus</div>"
-* section[sectionMedications].entry = Reference(MedStatMetformin) // MedicationStatement
+* section[sectionMedications].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Metformin</li>
+    <li>Candesartan</li>
+  </ul>
+</div>"
+* section[sectionMedications].entry[medicationStatement][0] = Reference(MedStatMetformin) // MedicationStatement
+* section[sectionMedications].entry[medicationStatement][+] = Reference(MedStatCandesartan) // MedicationStatement
 
 * section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
@@ -38,5 +45,27 @@ Description: "Example for CH IPS Composition"
 * section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 2</div>"
-* section[sectionProblems].entry = Reference(DiabetesMellitus) // Condition
+* section[sectionProblems].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Diabetes mellitus Typ 2</li>
+    <li>Bluthochdruck</li>
+    <li>Koronare Herzkrankheit</li>
+  </ul>
+</div>"
+* section[sectionProblems].entry[problem][0] = Reference(DiabetesMellitus) // Condition
+* section[sectionProblems].entry[problem][+] = Reference(HighBloodPressure) // Condition
+* section[sectionProblems].entry[problem][+] = Reference(CoronaryHeartDisease) // Condition
+
+// Recommended
+* section[sectionProceduresHx].title = "Behandlungsverlauf"
+* section[sectionProceduresHx].code = $loinc#47519-4 "History of Procedures Document"
+* section[sectionProceduresHx].text.status = #generated
+* section[sectionProceduresHx].text.div = 
+"<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <ul>
+    <li>Stent (27.09.2022) aufgrund koronarer Herzkrankheit</li>
+  </ul>
+</div>"
+* section[sectionProceduresHx].entry[procedure][0] = Reference(StentPlacement) // Procedure
+

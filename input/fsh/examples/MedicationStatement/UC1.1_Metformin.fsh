@@ -2,16 +2,14 @@ Instance: MedStatMetformin
 InstanceOf: ChIpsMedicationStatement
 Usage: #example
 Title: "UC 1.1: Metformin"
-Description: "Example for CH IPS MedicationStatement"
+Description: "Example for CH IPS MedicationStatement - Dosage 1-0-1-0"
 * contained = Metformin
 * status = #active
 * medicationReference = Reference(Metformin)
 * subject = Reference(MonikaWegmueller)
 * effectivePeriod.start = "2020-03-03"
-* reasonCode.text = "Diabetes mellitus type 2"
-* reasonReference = Reference(DiabetesMellitus)
-* dosage[0].sequence = 1
-* dosage[=].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
+* reasonCode.text = "Diabetes"
+* dosage[0].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
 * dosage[=].timing.repeat.boundsPeriod.start = "2020-03-03"
 * dosage[=].timing.repeat.when[0] = #MORN
 * dosage[=].timing.repeat.when[+] = #EVE
@@ -23,7 +21,7 @@ Description: "Example for CH IPS MedicationStatement"
 Instance: Metformin
 InstanceOf: ChIpsMedication
 Usage: #inline
-* code = urn:oid:2.51.1.1#7680521101306 "METFORMIN Axapharm Filmtabl 500 mg 50 Stk"
+* code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"
 * code.text = "METFORMIN Axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
 * form.text = "Tablette"
@@ -37,7 +35,7 @@ InstanceOf: ChIpsMedication
 Usage: #example
 Title: "Issue 2: Metformin"
 Description: "Example for CH IPS Medication - conforms to CH Core, but NOT to IPS (see issue #2)"
-* code = urn:oid:2.51.1.1#7680521101306 "METFORMIN Axapharm Filmtabl 500 mg 50 Stk"
+* code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"
 * code.text = "METFORMIN Axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
 * form.text = "Tablette"
