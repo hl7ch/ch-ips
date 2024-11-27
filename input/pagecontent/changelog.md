@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 1 (2024)
+### STU 1 (2024-12-17)
 
 #### Open Issues
 * [#2](https://github.com/hl7ch/ch-ips/issues/2): Incompatibility for medication units between CH IPS (UCUM & SCT) and IPS (UCUM) -> open [change request](https://jira.hl7.org/browse/FHIR-44765) for IPS
@@ -22,8 +22,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-ips/issues).
       * Remove Media 
       * Add Flag, ClinicalImpression, CarePlan, Consent and DocumentReference  
 * [#5](https://github.com/hl7ch/ch-ips/issues/5): Expansion use case, including validation medical content
-
-#### Fixed
 
 #### Issues resolved without amendment
 * [#4](https://github.com/hl7ch/ch-ips/issues/4): Known slicing issue in HL7 IPS-UV spec
