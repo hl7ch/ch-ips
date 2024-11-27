@@ -1,7 +1,7 @@
 == Suppressed Messages ==
 
 # Incompatibility between CH EMED and IPS for the medication units: https://github.com/hl7ch/ch-ips/issues/2
-Value is 'http://snomed.info/sct' but must be 'http://unitsofmeasure.org'
+Value is 'http://snomed.info/sct' but is fixed to 'http://unitsofmeasure.org' in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips|2.0.0-ballot#Quantity.system
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
@@ -16,3 +16,6 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 # Display values in different languages
 %is the default display; the code system%
 There are no valid display names found for the code%
+
+# Reference to draft code systems
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
