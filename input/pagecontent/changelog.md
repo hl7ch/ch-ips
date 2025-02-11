@@ -1,5 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
+### STU 2 Ballot (2025-05)
+
+
 ### STU 1 (2024-12-17)
 
 #### Open Issues
@@ -27,7 +30,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-ips/issues).
 * [#4](https://github.com/hl7ch/ch-ips/issues/4): Known slicing issue in HL7 IPS-UV spec
 
 
-### STU 1 Ballot - v1.0.0 (2024-05-17)
+### STU 1 Ballot (2024-05-17)
 Initial published version.
 
 #### Open Issues
