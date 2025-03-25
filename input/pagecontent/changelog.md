@@ -5,6 +5,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 * [#15](https://github.com/hl7ch/ch-ips/issues/15): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension
 
+#### Fixed 
+* [#18](https://github.com/hl7ch/ch-ips/issues/18): Fix (and update) terminology dependency to avoid version mismatch: hl7.terminology#6.1.0 -> hl7.terminology.r4#6.2.0
+
 ### STU 1 (2024-12-17)
 
 #### Open Issues
