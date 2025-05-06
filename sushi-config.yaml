@@ -28,7 +28,7 @@ contact:
         use: work
 
 dependencies:
-  hl7.terminology.r4: 6.2.0
+  hl7.terminology.r4: 6.3.0
   hl7.fhir.uv.ips: 2.0.0-ballot
   ch.fhir.ig.ch-core: current
   ch.fhir.ig.ch-term: 3.1.x
@@ -78,3 +78,4 @@ parameters:
   allow-extensible-warnings: true
   display-warnings: true
   path-expansion-params: '../../expansion-params.json' # for using SNOMED CT Swiss Extension
+  pin-canonicals: pin-multiples
