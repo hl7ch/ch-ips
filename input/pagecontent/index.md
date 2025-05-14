@@ -3,11 +3,14 @@ An **International Patient Summary (IPS) document** is an electronic health reco
 
 The **CH IPS** is an implementable, testable FHIR specification based on the IPS specification as defined by HL7 and ISO.   
 The CH IPS profile set is closely aligned with the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/2024Sep/) while still supporting localized needs for Switzerland and reducing barriers to early adoption.   
-To be able to guarantee this, the CH IPS profiles are derived from the respective [CH Core profiles](https://fhir.ch/ig/ch-core/5.0.0/index.html) and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
+To be able to guarantee this, the CH IPS profiles are derived from the respective [CH Core profiles](https://fhir.ch/ig/ch-core/6.0.0-ballot/index.html) and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
 
 {% include img.html img="ig-overview.png" caption="Fig. 1: Schematic representation of the dependency mechanism of the implementation guides" width="65%" %}
 
 <div markdown="1" class="stu-note">
+
+This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) until September 30th, 2025 midnight.   
+Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
 
 [Changelog](changelog.html) with significant changes, open and closed issues.
 
