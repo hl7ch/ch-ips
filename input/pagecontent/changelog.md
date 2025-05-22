@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 2 Ballot (2025-05)
+### STU 2 Ballot (2025-05-22)
 
 #### Added
 * [#15](https://github.com/hl7ch/ch-ips/issues/15): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension
