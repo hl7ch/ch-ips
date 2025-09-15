@@ -11,11 +11,12 @@ None of the codings provided are in the value set 'DocumentEntry.typeCode' (http
 
 # Caused through underlying profile
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
 # Display values in different languages
 %is the default display; the code system%
+Wrong Display Name%
 
 # Using the latest ballot version to be able to follow the updates: https://hl7.org/fhir/uv/ips/history.html
 The ImplementationGuide uses package hl7.fhir.uv.ips#2.0.0-ballot released on 2024-08-12, but the most recent appropriate version is 1.1.0. This reference is getting old and the more recent version should be considered
