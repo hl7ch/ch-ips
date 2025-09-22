@@ -40,14 +40,14 @@ Usage: #inline
     <li>Aspirin</li>
   </ul>
 </div>"
-* section[sectionMedications].entry[medicationStatement][0] = Reference(urn:uuid:88ee1ffb-26d0-49a2-95e4-6212261805a6) "Metformin"
-* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
-* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:6f369210-adb1-4f11-893d-9977e34932de) "Atorvastatin"
-* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
-* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:e463547f-7414-47cb-b97f-04a81e1ab7d8) "Clopidogrel"
-* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
-* section[sectionMedications].entry[medicationStatement][+] = Reference(urn:uuid:f27b9345-6ba6-4fd6-83ab-6db6c2acd981) "Aspirin"
-* section[sectionMedications].entry[medicationStatement][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(urn:uuid:88ee1ffb-26d0-49a2-95e4-6212261805a6) "Metformin"
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(urn:uuid:6f369210-adb1-4f11-893d-9977e34932de) "Atorvastatin"
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(urn:uuid:e463547f-7414-47cb-b97f-04a81e1ab7d8) "Clopidogrel"
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
+* section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(urn:uuid:f27b9345-6ba6-4fd6-83ab-6db6c2acd981) "Aspirin"
+* section[sectionMedications].entry[medicationStatementOrRequest][=].type = "MedicationStatement"
 
 * section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
