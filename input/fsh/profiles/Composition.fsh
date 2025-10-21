@@ -18,7 +18,7 @@ Description: "This CH IPS profile for the resource Composition is derived from t
     sectionMedicalDevices 0..1 and
     sectionResults 0..1 and
     sectionVitalSigns 0..1 and
-    sectionPastIllnessHx 0..1 and
+    sectionPastProblems 0..1 and
     sectionFunctionalStatus 0..1 and
     sectionPlanOfCare 0..1 and
     sectionSocialHistory 0..1 and
@@ -34,10 +34,8 @@ Description: "This CH IPS profile for the resource Composition is derived from t
 * section[sectionMedications].entry ^slicing.discriminator[=].path = "resolve()"
 * section[sectionMedications].entry ^slicing.rules = #open
 * section[sectionMedications].entry contains
-    medicationStatement 0..* and
-    medicationRequest 0..*
-* section[sectionMedications].entry[medicationStatement] only Reference(ChIpsMedicationStatement)
-* section[sectionMedications].entry[medicationRequest] only Reference(ChIpsMedicationRequest)
+    medicationStatementOrRequest 0..*
+* section[sectionMedications].entry[medicationStatementOrRequest] only Reference(ChIpsMedicationStatement or ChIpsMedicationRequest)
 
 * section[sectionAllergies].code = $loinc#48765-2
 * section[sectionAllergies].entry ^slicing.discriminator[0].type = #profile
@@ -88,12 +86,12 @@ Description: "This CH IPS profile for the resource Composition is derived from t
 * section[sectionResults].entry ^slicing.discriminator[=].path = "resolve()"
 * section[sectionResults].entry ^slicing.rules = #open
 * section[sectionResults].entry contains
-    resultsObservationLaboratoryPathology 0..* and
-    resultsObservationRadiology 0..* and 
-    resultsDiagnosticReport 0..*
-* section[sectionResults].entry[resultsObservationLaboratoryPathology] only Reference(ObservationResultsLaboratoryPathologyUvIps)
-* section[sectionResults].entry[resultsObservationRadiology] only Reference(ObservationResultsRadiologyUvIps)
-* section[sectionResults].entry[resultsDiagnosticReport] only Reference(DiagnosticReportUvIps)
+    results-observation-laboratory-pathology 0..* and
+    results-observation-radiology 0..* and
+    results-diagnosticReport 0..*
+* section[sectionResults].entry[results-observation-laboratory-pathology] only Reference(ObservationResultsLaboratoryPathologyUvIps)
+* section[sectionResults].entry[results-observation-radiology] only Reference(ObservationResultsRadiologyUvIps)
+* section[sectionResults].entry[results-diagnosticReport] only Reference(DiagnosticReportUvIps)
 
 // ------ Optional sections ------ //
 
@@ -105,13 +103,13 @@ Description: "This CH IPS profile for the resource Composition is derived from t
     vitalSign 0..*
 * section[sectionVitalSigns].entry[vitalSign] only Reference($vitalsigns)
 
-* section[sectionPastIllnessHx].code = $loinc#11348-0
-* section[sectionPastIllnessHx].entry ^slicing.discriminator[0].type = #profile
-* section[sectionPastIllnessHx].entry ^slicing.discriminator[=].path = "resolve()"
-* section[sectionPastIllnessHx].entry ^slicing.rules = #open
-* section[sectionPastIllnessHx].entry contains 
+* section[sectionPastProblems].code = $loinc#11348-0
+* section[sectionPastProblems].entry ^slicing.discriminator[0].type = #profile
+* section[sectionPastProblems].entry ^slicing.discriminator[=].path = "resolve()"
+* section[sectionPastProblems].entry ^slicing.rules = #open
+* section[sectionPastProblems].entry contains 
     pastProblem 0..*
-* section[sectionPastIllnessHx].entry[pastProblem] only Reference(ChIpsCondition)
+* section[sectionPastProblems].entry[pastProblem] only Reference(ChIpsCondition)
 
 * section[sectionFunctionalStatus].code = $loinc#47420-5
 * section[sectionFunctionalStatus].entry ^slicing.discriminator[0].type = #profile
@@ -128,8 +126,10 @@ Description: "This CH IPS profile for the resource Composition is derived from t
 * section[sectionPlanOfCare].entry ^slicing.discriminator[=].path = "resolve()"
 * section[sectionPlanOfCare].entry ^slicing.rules = #open
 * section[sectionPlanOfCare].entry contains 
-    carePlan 0..*
+    carePlan 0..* and 
+    immunizationRecommendation 0..*
 * section[sectionPlanOfCare].entry[carePlan] only Reference(CarePlan)
+* section[sectionPlanOfCare].entry[immunizationRecommendation] only Reference(CHCoreImmunizationRecommendation)
 
 * section[sectionSocialHistory].code = $loinc#29762-2
 * section[sectionSocialHistory].entry ^slicing.discriminator[0].type = #profile
@@ -147,9 +147,9 @@ Description: "This CH IPS profile for the resource Composition is derived from t
 * section[sectionPregnancyHx].entry ^slicing.rules = #open
 * section[sectionPregnancyHx].entry contains
     pregnancyStatus 0..* and
-    pregnancyOutcomeSummary 0..*
+    pregnancyOutcome 0..*
 * section[sectionPregnancyHx].entry[pregnancyStatus] only Reference(ObservationPregnancyStatusUvIps)
-* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary] only Reference(ObservationPregnancyOutcomeUvIps)
+* section[sectionPregnancyHx].entry[pregnancyOutcome] only Reference(ObservationPregnancyOutcomeUvIps)
 
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator[0].type = #profile
@@ -168,4 +168,3 @@ Description: "This CH IPS profile for the resource Composition is derived from t
 * section[sectionAlerts].entry[alertsFlag] only Reference(FlagAlertUvIps)
 
 * section[sectionPatientStory].code = $loinc#81338-6
-
