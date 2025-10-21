@@ -2,7 +2,7 @@
 An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.  
 
 The **CH IPS** is an implementable, testable FHIR specification based on the IPS specification as defined by HL7 and ISO.   
-The CH IPS profile set is closely aligned with the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/2024Sep/) while still supporting localized needs for Switzerland and reducing barriers to early adoption.   
+The CH IPS profile set is closely aligned with the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/STU2/) while still supporting localized needs for Switzerland and reducing barriers to early adoption.   
 To be able to guarantee this, the CH IPS profiles are derived from the respective [CH Core profiles](https://fhir.ch/ig/ch-core/6.0.0-ballot/index.html) and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
 
 {% include img.html img="ig-overview.png" caption="Fig. 1: Schematic representation of the dependency mechanism of the implementation guides" width="65%" %}
@@ -19,11 +19,11 @@ Please add your feedback via the ‘Propose a change’-link in the footer on th
 **Download**: You can download this implementation guide in the [npm package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
 
 ### Principles & Design
-CH IPS follows the [General Principles](https://hl7.org/fhir/uv/ips/2024Sep/General-Principles.html) and [Design Conventions](https://hl7.org/fhir/uv/ips/2024Sep/Design-Conventions.html) of the International Patient Summary IG. Please check the detailed information there.    
+CH IPS follows the [General Principles](https://hl7.org/fhir/uv/ips/STU2/General-Principles.html) and [Design Conventions](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html) of the International Patient Summary IG. Please check the detailed information there.    
 In the CH IPS IG, only a few key points are highlighted and visualized in a simplified form:
-* The IPS is composed of different elements and sections, see the description in the [IPS IG](https://hl7.org/fhir/uv/ips/2024Sep/Structure-of-the-International-Patient-Summary.html). The [CH IPS Document](document.html) is based on this **structure**.
-* The principles for representing **empty sections & missing data** described in the [IPS IG](https://hl7.org/fhir/uv/ips/2024Sep/Design-Conventions.html#empty-sections--missing-data) apply for CH IPS and are illustrated in Fig. 2.
-* In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support (MS)** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/2024Sep/Design-Conventions.html#must-support) also take effect.
+* The IPS is composed of different elements and sections, see the description in the [IPS IG](https://hl7.org/fhir/uv/ips/STU2/Structure-of-the-International-Patient-Summary.html). The [CH IPS Document](document.html) is based on this **structure**.
+* The principles for representing **empty sections & missing data** described in the [IPS IG](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#empty-sections--missing-data) apply for CH IPS and are illustrated in Fig. 2.
+* In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support (MS)** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#must-support) also take effect.
 
 {% include img.html img="sections.png" caption="Fig. 2: Summary illustration of some principles for the sections" width="70%" %}
 

@@ -5,7 +5,7 @@ This exchange format is defined as a [document](https://hl7.org/fhir/R4/document
 
 
 ### Profile
-[CH IPS Document](StructureDefinition-ch-ips-document.html): Definition for the Swiss IPS Document in the context of the electronic patient record (EPR), derived from the [CH Core Document EPR](https://fhir.ch/ig/ch-core/6.0.0-ballot/StructureDefinition-ch-core-document-epr.html) with support for conformity with the [IPS Document](https://hl7.org/fhir/uv/ips/2024Sep/StructureDefinition-Bundle-uv-ips.html).
+[CH IPS Document](StructureDefinition-ch-ips-document.html): Definition for the Swiss IPS Document in the context of the electronic patient record (EPR), derived from the [CH Core Document EPR](https://fhir.ch/ig/ch-core/6.0.0-ballot/StructureDefinition-ch-core-document-epr.html) with support for conformity with the [IPS Document](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Bundle-uv-ips.html).
 
 ### Examples
 * [UC 1.1: Swiss IPS Document](Bundle-UC1-SwissIpsDocument1.html): Document includes required sections (including representation of an 'empty section') and a recommended section
