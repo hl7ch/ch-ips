@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# Incompatibility between CH EMED and IPS for the medication units: https://github.com/hl7ch/ch-ips/issues/2
-Value is 'http://snomed.info/sct' but is fixed to 'http://unitsofmeasure.org' in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips|2.0.0-ballot#Quantity.system
-
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 
@@ -18,5 +15,5 @@ The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValue
 %is the default display; the code system%
 Wrong Display Name%
 
-# Using the latest ballot version to be able to follow the updates: https://hl7.org/fhir/uv/ips/history.html
-The ImplementationGuide uses package hl7.fhir.uv.ips#2.0.0-ballot released on 2024-08-12, but the most recent appropriate version is 1.1.0. This reference is getting old and the more recent version should be considered
+# Information about pinned versions 
+Pinned the version of%
