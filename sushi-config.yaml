@@ -73,6 +73,12 @@ pages:
   changelog.md:
     title: Changelog   
 
+resources:
+  Bundle/bundle-ips-all-sections:
+    name: Bundle - IPS with All Sections
+    description: UV IPS Bundle example including all possible sections as defined in the IPS specification
+    exampleBoolean: true
+
 # For parameters defined by core FHIR see: 
 # http://build.fhir.org/codesystem-guide-parameter-code.html.
 # For parameters defined by the FHIR Tools IG  see:

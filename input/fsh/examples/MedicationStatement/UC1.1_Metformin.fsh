@@ -27,21 +27,3 @@ Usage: #inline
 * form.text = "Tablette"
 * amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
-
-
-// https://github.com/hl7ch/ch-ips/issues/2
-Instance: MetforminIssue2
-InstanceOf: ChIpsMedication
-Usage: #example
-Title: "Issue 2: Metformin"
-Description: "Example for CH IPS Medication - conforms to CH Core, but NOT to IPS (see issue #2)"
-* code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"
-* code.text = "METFORMIN Axapharm Filmtabl 500 mg"
-* form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
-* form.text = "Tablette"
-* amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
-* amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
-* ingredient.itemCodeableConcept = $sct#109083009 "Metformin hydrochloride (substance)"
-* ingredient.itemCodeableConcept.text = "Metformin hydrochloride"
-* ingredient.strength.numerator = 500 'mg' "milligram"
-* ingredient.strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"

@@ -1,6 +1,6 @@
 
 Profile: ChIpsComposition
-Parent: CHCoreCompositionEPR
+Parent: CHCoreComposition
 Id: ch-ips-composition
 Title: "CH IPS Composition"
 Description: "This CH IPS profile for the resource Composition is derived from the corresponding CH Core profile and also ensures IPS conformity via the IPS profile referenced by the so-called imposeProfile extension."
@@ -9,6 +9,10 @@ Description: "This CH IPS profile for the resource Composition is derived from t
 * subject only Reference(ChIpsPatient)
 * relatesTo.target[x] only Identifier or Reference(ChIpsComposition)
 
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.ordered = false
+* section ^slicing.rules = #open
 * section contains
     sectionMedications 1..1 and
     sectionAllergies 1..1 and
