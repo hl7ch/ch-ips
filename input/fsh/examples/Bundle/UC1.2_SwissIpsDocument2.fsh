@@ -1,7 +1,7 @@
 Instance: UC1-SwissIpsDocument2
-InstanceOf: ChIpsDocument
+InstanceOf: ChIpsDocumentEPR
 Usage: #example
-Title: "UC 1.2: Swiss IPS Document"
+Title: "UC 1.2: Swiss IPS Document - EPR conform"
 Description: "Example for CH IPS Document (with required, some recommended and some optional sections) - using UUIDs for fullUrls/references"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"

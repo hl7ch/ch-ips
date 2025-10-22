@@ -3,9 +3,9 @@ InstanceOf: ChIpsPatient
 Usage: #example
 Title: "UC 1.1: Monika Wegmüller"
 Description: "Example for CH IPS Patient"
-* identifier.type = $v2-0203#MR "Medical record number"
-* identifier.system = "urn:oid:2.999.1.2.3.4"
-* identifier.value = "11111111"
+//* identifier.type = $v2-0203#MR "Medical record number"
+//* identifier.system = "urn:oid:2.999.1.2.3.4"
+//* identifier.value = "11111111"
 * name.family = "Wegmüller"
 * name.given = "Monika"
 * gender = #female

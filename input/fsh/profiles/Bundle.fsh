@@ -1,5 +1,5 @@
 Profile: ChIpsDocument
-Parent: CHCoreDocumentEPR
+Parent: CHCoreDocument
 Id: ch-ips-document
 Title: "CH IPS Document"
 Description: "This CH IPS profile for the resource Bundle is derived from the corresponding CH Core profile and also ensures IPS conformity via the IPS profile referenced by the so-called imposeProfile extension."
