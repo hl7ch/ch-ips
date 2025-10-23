@@ -9,14 +9,14 @@ _The Composition resource is special in that it can convey narrative in both `Co
 
 #### HL7 IPS-UV
 
-[Narrative Content Guidance](https://hl7.org/fhir/uv/ips/2024Sep/Design-Conventions.html#narrative-content-guidance):   
+[Narrative Content Guidance](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#narrative-content-guidance):   
 _While no constraints are implemented, early implementers have recommended that IPS documents not duplicate the content contained in `Composition.section.text` (which is required) in the `Composition.text`._
 
 #### Implementers Feedback
 
 <div markdown="5" class="dragon">
     <p>
-    Please consider also the <a href="https://hl7.org/fhir/uv/ips/2024Sep/Design-Conventions.html#narrative-content-guidance">HL7 IPS-UV STU Note</a>: 
+    Please consider also the <a href="https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#narrative-content-guidance">HL7 IPS-UV STU Note</a>: 
     </p>
     <p>
     <em>While a globally consistent practice has not been identified, IPS encourages implementers to review emerging best practices and guidelines regarding narrative text that are being implemented in participating nations (e.g., <a href="https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_IG_STU3#Resource.text_or_.22the_narrative.22">The Netherlands</a>) and discussed in the <a href="https://chat.fhir.org/#narrow/stream/207835-IPS/topic/generation.20of.20narrative">FHIR Community</a>.</em>

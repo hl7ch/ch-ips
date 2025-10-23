@@ -21,8 +21,8 @@ Description: "Example for CH IPS MedicationStatement - Dosage 1-0-1-0"
 Instance: Metformin
 InstanceOf: ChIpsMedication
 Usage: #inline
-* code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"
-* code.text = "METFORMIN Axapharm Filmtabl 500 mg"
+* code = urn:oid:2.51.1.1#7680696890012 "METFORMIN axapharm Filmtabl 500 mg (Blister 50 Stk)"
+* code.text = "METFORMIN axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
 * form.text = "Tablette"
 * amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
@@ -35,8 +35,8 @@ InstanceOf: ChIpsMedication
 Usage: #example
 Title: "Issue 2: Metformin"
 Description: "Example for CH IPS Medication - conforms to CH Core, but NOT to IPS (see issue #2)"
-* code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"
-* code.text = "METFORMIN Axapharm Filmtabl 500 mg"
+* code = urn:oid:2.51.1.1#7680696890012 "METFORMIN axapharm Filmtabl 500 mg (Blister 50 Stk)"
+* code.text = "METFORMIN axapharm Filmtabl 500 mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
 * form.text = "Tablette"
 * amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
