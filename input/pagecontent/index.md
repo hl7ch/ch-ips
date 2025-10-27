@@ -22,6 +22,10 @@ CH IPS provides two complementary document profiles that enable different **vali
 
 The **conformance approach** of CH IPS is based on deriving profiles from the respective CH Core profiles, where conformity with the corresponding IPS-UV profiles is ensured through the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html). To ensure Swiss EPR conformance, the additional CH IPS Document EPR profile is provided, which also uses the imposeProfile extension to reference the CH Core Document EPR profile, thereby enforcing all EPR-specific requirements. This approach guarantees that CH IPS documents are "proper IPS" documents while supporting both general Swiss healthcare context and specific EPR integration requirements.
 
+The **CH IPS** is an implementable, testable FHIR specification based on the IPS specification as defined by HL7 and ISO.   
+The CH IPS profile set is closely aligned with the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/STU2/) while still supporting localized needs for Switzerland and reducing barriers to early adoption.   
+To be able to guarantee this, the CH IPS profiles are derived from the respective [CH Core profiles](https://fhir.ch/ig/ch-core/6.0.0-ballot/index.html) and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
+
 {% include img.html img="ig-overview.png" caption="Fig. 1: Schematic representation of the dependency mechanism of the implementation guides" width="65%" %}
 
 When processing **non-Swiss IPS documents**, Swiss systems receiving IPS documents from other countries that do not conform to Swiss-specific requirements (e.g., missing Swiss identifiers) should be able to process the core IPS content. Limitations may include:
