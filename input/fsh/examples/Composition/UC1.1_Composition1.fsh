@@ -33,8 +33,8 @@ Description: "Example for CH IPS Composition"
     <li>Candesartan</li>
   </ul>
 </div>"
-* section[sectionMedications].entry[medicationStatement][0] = Reference(MedStatMetformin) // MedicationStatement
-* section[sectionMedications].entry[medicationStatement][+] = Reference(MedStatCandesartan) // MedicationStatement
+* section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(MedStatMetformin) // MedicationStatement
+* section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(MedStatCandesartan) // MedicationStatement
 
 * section[sectionAllergies].title = "Allergien und Intoleranzen"
 * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
