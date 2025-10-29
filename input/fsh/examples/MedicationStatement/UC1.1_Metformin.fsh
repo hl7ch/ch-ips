@@ -27,3 +27,8 @@ Usage: #inline
 * form.text = "Tablette"
 * amount.numerator = 50 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
+* ingredient.itemCodeableConcept = $sct#109083009 "Metformin hydrochloride (substance)"
+* ingredient.itemCodeableConcept.text = "Metformin hydrochloride"
+* ingredient.strength.numerator = 500 'mg' "milligram"
+* ingredient.strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+
