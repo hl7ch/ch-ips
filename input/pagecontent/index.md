@@ -28,9 +28,7 @@ To be able to guarantee this, the CH IPS profiles are derived from the respectiv
 
 {% include img.html img="ig-overview.png" caption="Fig. 1: Schematic representation of the dependency mechanism of the implementation guides" width="65%" %}
 
-When processing **non-Swiss IPS documents**, Swiss systems receiving IPS documents from other countries that do not conform to Swiss-specific requirements (e.g., missing Swiss identifiers) should be able to process the core IPS content. Limitations may include:
-* Inability to integrate documents directly into Swiss EPR without identifier mapping
-* Need for manual verification of healthcare professional credentials
+When processing **non-Swiss IPS documents**, Swiss systems receiving IPS documents from other countries that do not conform to Swiss-specific requirements should be able to process the core clinical IPS content for immediate care decisions.
 
 <br>
 
