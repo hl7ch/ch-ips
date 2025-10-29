@@ -15,9 +15,9 @@ Usage: #inline
 * confidentiality = #N
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
-* attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party = Reference(urn:uuid:4d4e3587-42eb-4921-8c87-8bbf89b7eb4b) "Martina Meier"
-* attester[legalAuthenticator].party.type = "Practitioner"
+* attester.mode = #legal
+* attester.party = Reference(urn:uuid:4d4e3587-42eb-4921-8c87-8bbf89b7eb4b) "Martina Meier"
+* attester.party.type = "Practitioner"
 * custodian = Reference(urn:uuid:a27376ce-fa12-458d-a2dc-f90e63de126b) "Spital"
 * custodian.type = "Organization"
 * relatesTo.code = #replaces

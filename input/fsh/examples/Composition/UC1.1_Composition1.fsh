@@ -16,8 +16,8 @@ Description: "Example for CH IPS Composition"
 * author = Reference(FamilienHausarztAtHausarzt)
 * title = "Patient Summary for IPS Switerland"
 * confidentiality = #N
-* attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party = Reference(FamilienHausarzt) // Practitioner
+* attester.mode = #legal
+* attester.party = Reference(FamilienHausarzt) // Practitioner
 * custodian = Reference(Hausarzt) // Organization
 * event.code = $v3-ActClass#PCPR "care provision"
 * event.period.end = "2024-01-11T10:00:00+01:00"

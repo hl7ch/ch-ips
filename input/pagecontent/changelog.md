@@ -11,6 +11,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-ips/issues).
 
 #### Changed / Updated 
 * [#24](https://github.com/hl7ch/ch-ips/issues/24): Update to the newest published version of UV IPS (v2.0.0) (updated slice names and added new entries according to UV IPS)
+* [#22](https://github.com/hl7ch/ch-ips/issues/22): Jurisdictional Patient Summary Specifications: introduction of two validation levels (1. UV IPS and Swiss context, 2. additional EPR context), see [Home](index.html#introduction) and [Document](document.html#profiles)
 * [#28](https://github.com/hl7ch/ch-ips/issues/28): Update GTIN for METFORMIN
 
 #### Fixed 
