@@ -7,8 +7,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 See also open issues on [GitHub](https://github.com/hl7ch/ch-ips/issues).
 
-#### Added
-
 #### Changed / Updated 
 * [#24](https://github.com/hl7ch/ch-ips/issues/24): Update to the newest published version of UV IPS (v2.0.0) (updated slice names and added new entries according to UV IPS)
 * [#22](https://github.com/hl7ch/ch-ips/issues/22): Jurisdictional Patient Summary Specifications: introduction of two validation levels (1. UV IPS and Swiss context, 2. additional EPR context), see [Home](index.html#introduction) and [Document](document.html#profiles)
@@ -16,7 +14,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-ips/issues).
 
 #### Fixed 
 * [#2](https://github.com/hl7ch/ch-ips/issues/2), [#27](https://github.com/hl7ch/ch-ips/issues/27): Fixed incompatibility for medication units between CH IPS (UCUM & SCT) and UV IPS (UCUM) through ([FHIR-44765](https://jira.hl7.org/browse/FHIR-44765))
-
 
 
 ### STU 2 Ballot (2025-05-22)
