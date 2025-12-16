@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 2 (2025-12-15)
+### STU 2 (2025-12-16)
 
 #### Open Issues
 * [#16](https://github.com/hl7ch/ch-ips/issues/16): Conformity to EPS -> EPS not yet published ([confluence](https://confluence.hl7.org/spaces/HEU/pages/248712169/European+Patient+Summary+Edition+1))
