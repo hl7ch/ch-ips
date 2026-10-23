@@ -1,7 +1,7 @@
 Instance: ad3ec07d-1814-4faf-86fd-1a8ebeecb5fe
 InstanceOf: ProcedureUvIps
 Usage: #example
-Title: "UC 1.2: Stent Placement"
+Title: "UC 1.2: Stent Placement (27.09.2022)"
 Description: "Example for Procedure"
 * status = #completed
 * code = $sct#36969009 "Placement of stent in coronary artery (procedure)"
