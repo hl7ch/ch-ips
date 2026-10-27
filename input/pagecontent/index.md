@@ -9,7 +9,7 @@ The primary **purpose** of CH IPS is to:
 
 CH IPS provides two complementary document profiles that enable different **validation levels** to support different implementation scenarios:
 1. The [CH IPS Document Profile](StructureDefinition-ch-ips-document.html) ensures:
-   * **IPS-UV Conformance**: Full validation against the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/STU2/), guaranteeing international interoperability. **All documents conforming to CH IPS Document are valid IPS documents.**
+   * **IPS-UV Conformance**: Full validation against the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/2.0.1/), guaranteeing international interoperability. **All documents conforming to CH IPS Document are valid IPS documents.**
    * **Swiss Healthcare Context**: Validation against CH Core profiles, supporting Swiss-specific requirements such as:
       * Swiss identifier systems and extensions
       * Swiss terminology
@@ -23,8 +23,8 @@ CH IPS provides two complementary document profiles that enable different **vali
 The **conformance approach** of CH IPS is based on deriving profiles from the respective CH Core profiles, where conformity with the corresponding IPS-UV profiles is ensured through the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html). To ensure Swiss EPR conformance, the additional CH IPS Document EPR profile is provided, which also uses the imposeProfile extension to reference the CH Core Document EPR profile, thereby enforcing all EPR-specific requirements. This approach guarantees that CH IPS documents are "proper IPS" documents while supporting both general Swiss healthcare context and specific EPR integration requirements.
 
 The **CH IPS** is an implementable, testable FHIR specification based on the IPS specification as defined by HL7 and ISO.   
-The CH IPS profile set is closely aligned with the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/STU2/) while still supporting localized needs for Switzerland and reducing barriers to early adoption.   
-To be able to guarantee this, the CH IPS profiles are derived from the respective [CH Core profiles](https://fhir.ch/ig/ch-core/6.0.0-ballot/index.html) and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
+The CH IPS profile set is closely aligned with the [HL7 IPS-UV specification](https://hl7.org/fhir/uv/ips/2.0.1/) while still supporting localized needs for Switzerland and reducing barriers to early adoption.   
+To be able to guarantee this, the CH IPS profiles are derived from the respective [CH Core profiles](https://fhir.ch/ig/ch-core/7.0.0/index.html) and conformity with the corresponding IPS profile is ensured with the [imposeProfile extension](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html).
 
 {% include img.html img="ig-overview.png" caption="Fig. 1: Schematic representation of the dependency mechanism of the implementation guides" width="65%" %}
 
@@ -38,14 +38,14 @@ When processing **non-Swiss IPS documents**, Swiss systems receiving IPS documen
 
 </div>
 
-**Download**: You can download this implementation guide in the [npm package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
+**Download**: You can download this implementation guide in the [npm package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](../package.tgz).
 
 ### Principles & Design
-CH IPS follows the [General Principles](https://hl7.org/fhir/uv/ips/STU2/General-Principles.html) and [Design Conventions](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html) of the International Patient Summary IG. Please check the detailed information there.    
+CH IPS follows the [General Principles](https://hl7.org/fhir/uv/ips/2.0.1/General-Principles.html) and [Design Conventions](https://hl7.org/fhir/uv/ips/2.0.1/Design-Conventions.html) of the International Patient Summary IG. Please check the detailed information there.    
 In the CH IPS IG, only a few key points are highlighted and visualized in a simplified form:
-* The IPS is composed of different elements and sections, see the description in the [IPS IG](https://hl7.org/fhir/uv/ips/STU2/Structure-of-the-International-Patient-Summary.html). The [CH IPS Document](document.html) is based on this **structure**.
-* The principles for representing **empty sections & missing data** described in the [IPS IG](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#empty-sections--missing-data) apply for CH IPS and are illustrated in Fig. 2.
-* In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support (MS)** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#must-support) also take effect.
+* The IPS is composed of different elements and sections, see the description in the [IPS IG](https://hl7.org/fhir/uv/ips/2.0.1/Structure-of-the-International-Patient-Summary.html). The [CH IPS Document](document.html) is based on this **structure**.
+* The principles for representing **empty sections & missing data** described in the [IPS IG](https://hl7.org/fhir/uv/ips/2.0.1/Design-Conventions.html#empty-sections--missing-data) apply for CH IPS and are illustrated in Fig. 2.
+* In this IG no elements are actively flagged as [mustSupport](https://hl7.org/fhir/r4/conformance-rules.html#mustSupport) = `true`. **Must Support (MS)** in CH IPS applies to the same elements as defined in IPS and the same [rules](https://hl7.org/fhir/uv/ips/2.0.1/Design-Conventions.html#must-support) also take effect.
 
 {% include img.html img="sections.png" caption="Fig. 2: Summary illustration of some principles for the sections" width="70%" %}
 

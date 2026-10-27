@@ -1,6 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 3 Ballot (unreleased)
+### STU 2.0.1 (unreleased)
+
+#### Changed / Updated 
+* [#33](https://github.com/hl7ch/ch-ips/issues/33): Update dependencies: CH Core 6.0.0 -> 7.0.0, UV IPS 2.0.0 -> 2.0.1, CH Term 3.3.x -> 3.4.x, hl7.terminology.r4 7.0.1 -> 7.4.0
 
 
 ### STU 2 (2025-12-16)
